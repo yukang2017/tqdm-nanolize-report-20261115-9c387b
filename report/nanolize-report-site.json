@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "operation": "report_site",
+  "public_safe": true,
+  "report_id": "nrs_5afdf736aaead8b1877c67ea5f472afef536978177034229af4953b365927e32",
+  "files": [
+    {
+      "path": "data.json",
+      "sha256": "be76fe8b6dd63d5ca5ec0992d65753279d053f748c9051eadee50188470b5235"
+    },
+    {
+      "path": "evidence.json",
+      "sha256": "42ea49ec9594d40336f53c8407c6cea96a7a125d0605a6a2830475356f1195f8"
+    },
+    {
+      "path": "index.html",
+      "sha256": "0a8077a6f1bc2f52f966760927a4163a86a4f9183af3d204fef677728c926e9c"
+    },
+    {
+      "path": "metrics.csv",
+      "sha256": "e23aced81fdae8e2431f3ba77b3cba11a54758908da4a2e3350eb0c77c0a47be"
+    },
+    {
+      "path": "run-summary.json",
+      "sha256": "22b86acf6197ec4d14f753bcd7a81f32027017bafd16f1f7edb92efda5fe7a7a"
+    }
+  ],
+  "presentation": {
+    "language": "zh-CN",
+    "privacy": "source paths replaced by opaque labels",
+    "summary_added": true
+  }
+}

@@ -1,0 +1,6414 @@
+{
+  "schema_version": 1,
+  "operation": "nanolize_report",
+  "binding": {
+    "original_git_head": "b8aed2e5e4395da4e0843f07f41056ed71fa6241",
+    "candidate_git_head": "de8e56fc1063cc466005c39d1fb5359311577b75",
+    "candidate_source_sha256": "99de117e249d803dfd3b1341f1eaaf9a45a59756ea176beac1943ce6440bcc6c",
+    "candidate_contract_sha256": "03502e2c5ebc9245b47a748d7602445c58c90001f7597235a3bebc1a541ac883",
+    "plan_sha256": "886a88b979a82b7e4647cd4bca2788cd5f5bb9164558a1e6f6ff3955b45c3981",
+    "verification_sha256": "f8611b5d98f8588e18e381027125efd181f85643a799ae6d8bc12600607b5c99",
+    "candidate_code_size_sha256": "6709d8c08cf974b2f4e0477cb812b32dcfe16054479aa75d0f084dcded1e52b9"
+  },
+  "summary": {
+    "before": 5608,
+    "after": 3064,
+    "reduction_percent": 45.364,
+    "capabilities": 22,
+    "count_unit": "capabilities",
+    "status_counts": {
+      "verified": 18,
+      "failed": 0,
+      "partial": 0,
+      "unknown": 4,
+      "retired": 0
+    },
+    "evidence_counts": {
+      "failed": 0,
+      "direct_passed": 18,
+      "direct_partial": 0,
+      "related_passed": 4,
+      "related_only": 0,
+      "unverified": 0,
+      "retired": 0
+    },
+    "aggregate_status_counts": {
+      "verified": 22,
+      "failed": 0,
+      "partial": 0,
+      "unknown": 0,
+      "retired": 0
+    },
+    "verification_status": "checks_passed",
+    "verification_tests": {
+      "original_total": 14,
+      "retained": 43,
+      "retired": 0,
+      "needs_adaptation": 0,
+      "adapted": 0,
+      "contract": 29,
+      "passed": 43,
+      "failed": 0,
+      "fixed_baseline_failure": 0,
+      "not_run": 0
+    },
+    "unattributed_checks": [
+      {
+        "name": "original_utils",
+        "status": "passed",
+        "role": "original",
+        "scope": "retained",
+        "capabilities": [
+          "utils"
+        ],
+        "baseline_status": "passed",
+        "candidate_status": "passed",
+        "target_capabilities": [],
+        "attribution": "unattributed",
+        "facts_given": 4,
+        "baseline_cases": {
+          "passed": 4,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0,
+          "executed": 4
+        },
+        "candidate_cases": {
+          "passed": 4,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0,
+          "executed": 4
+        }
+      },
+      {
+        "name": "original_rlock",
+        "status": "passed",
+        "role": "original",
+        "scope": "retained",
+        "capabilities": [
+          "core",
+          "monitor"
+        ],
+        "baseline_status": "passed",
+        "candidate_status": "passed",
+        "target_capabilities": [],
+        "attribution": "unattributed",
+        "facts_given": 2,
+        "baseline_cases": {
+          "passed": 1,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0,
+          "executed": 1
+        },
+        "candidate_cases": {
+          "passed": 1,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0,
+          "executed": 1
+        }
+      },
+      {
+        "name": "original_gui",
+        "status": "passed",
+        "role": "original",
+        "scope": "retained",
+        "capabilities": [
+          "gui"
+        ],
+        "baseline_status": "passed",
+        "candidate_status": "passed",
+        "target_capabilities": [],
+        "attribution": "unattributed",
+        "baseline_cases": {
+          "passed": 1,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0,
+          "executed": 1
+        },
+        "candidate_cases": {
+          "passed": 1,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0,
+          "executed": 1
+        }
+      },
+      {
+        "name": "original_tk",
+        "status": "passed",
+        "role": "original",
+        "scope": "retained",
+        "capabilities": [
+          "tk"
+        ],
+        "baseline_status": "passed",
+        "candidate_status": "passed",
+        "target_capabilities": [],
+        "attribution": "unattributed",
+        "facts_given": 1,
+        "baseline_cases": {
+          "passed": 1,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0,
+          "executed": 1
+        },
+        "candidate_cases": {
+          "passed": 1,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0,
+          "executed": 1
+        }
+      },
+      {
+        "name": "original_keras",
+        "status": "passed",
+        "role": "original",
+        "scope": "retained",
+        "capabilities": [
+          "keras"
+        ],
+        "baseline_status": "passed",
+        "candidate_status": "passed",
+        "target_capabilities": [],
+        "attribution": "unattributed",
+        "facts_given": 5,
+        "baseline_cases": {
+          "passed": 0,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 1,
+          "executed": 0
+        },
+        "candidate_cases": {
+          "passed": 0,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 1,
+          "executed": 0
+        }
+      },
+      {
+        "name": "original_version",
+        "status": "passed",
+        "role": "original",
+        "scope": "retained",
+        "capabilities": [
+          "core"
+        ],
+        "baseline_status": "passed",
+        "candidate_status": "passed",
+        "target_capabilities": [],
+        "attribution": "unattributed",
+        "facts_given": 1,
+        "baseline_cases": {
+          "passed": 1,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0,
+          "executed": 1
+        },
+        "candidate_cases": {
+          "passed": 1,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0,
+          "executed": 1
+        }
+      },
+      {
+        "name": "original_perf",
+        "status": "passed",
+        "role": "original",
+        "scope": "retained",
+        "capabilities": [
+          "core",
+          "benchmarks"
+        ],
+        "baseline_status": "passed",
+        "candidate_status": "passed",
+        "target_capabilities": [],
+        "attribution": "unattributed",
+        "facts_given": 13,
+        "baseline_cases": {
+          "passed": 7,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0,
+          "executed": 7
+        },
+        "candidate_cases": {
+          "passed": 7,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0,
+          "executed": 7
+        }
+      },
+      {
+        "name": "public_iteration_output",
+        "status": "passed",
+        "role": "contract",
+        "scope": "retained",
+        "capabilities": [
+          "core"
+        ],
+        "baseline_status": "passed",
+        "candidate_status": "passed",
+        "target_capabilities": [],
+        "attribution": "unattributed"
+      },
+      {
+        "name": "contract-core-9c387b-22",
+        "status": "passed",
+        "role": "contract",
+        "scope": "retained",
+        "capabilities": [
+          "core"
+        ],
+        "baseline_status": "passed",
+        "candidate_status": "passed",
+        "target_capabilities": [],
+        "attribution": "unattributed",
+        "facts_given": 7,
+        "baseline_cases": {
+          "passed": 29,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0,
+          "executed": 29
+        },
+        "candidate_cases": {
+          "passed": 29,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0,
+          "executed": 29
+        }
+      },
+      {
+        "name": "contract-core-9c387b-23",
+        "status": "passed",
+        "role": "contract",
+        "scope": "retained",
+        "capabilities": [
+          "core"
+        ],
+        "baseline_status": "passed",
+        "candidate_status": "passed",
+        "target_capabilities": [],
+        "attribution": "unattributed",
+        "facts_given": 12,
+        "baseline_cases": {
+          "passed": 11,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0,
+          "executed": 11
+        },
+        "candidate_cases": {
+          "passed": 11,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0,
+          "executed": 11
+        }
+      },
+      {
+        "name": "contract-core-9c387b-24",
+        "status": "passed",
+        "role": "contract",
+        "scope": "retained",
+        "capabilities": [
+          "core"
+        ],
+        "baseline_status": "passed",
+        "candidate_status": "passed",
+        "target_capabilities": [],
+        "attribution": "unattributed",
+        "facts_given": 11,
+        "baseline_cases": {
+          "passed": 12,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0,
+          "executed": 12
+        },
+        "candidate_cases": {
+          "passed": 12,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0,
+          "executed": 12
+        }
+      },
+      {
+        "name": "contract-core-9c387b-25",
+        "status": "passed",
+        "role": "contract",
+        "scope": "retained",
+        "capabilities": [
+          "core"
+        ],
+        "baseline_status": "passed",
+        "candidate_status": "passed",
+        "target_capabilities": [],
+        "attribution": "unattributed",
+        "facts_given": 11,
+        "baseline_cases": {
+          "passed": 6,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0,
+          "executed": 6
+        },
+        "candidate_cases": {
+          "passed": 6,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0,
+          "executed": 6
+        }
+      },
+      {
+        "name": "contract-core-9c387b-26",
+        "status": "passed",
+        "role": "contract",
+        "scope": "retained",
+        "capabilities": [
+          "core"
+        ],
+        "baseline_status": "passed",
+        "candidate_status": "passed",
+        "target_capabilities": [],
+        "attribution": "unattributed",
+        "facts_given": 5,
+        "baseline_cases": {
+          "passed": 5,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0,
+          "executed": 5
+        },
+        "candidate_cases": {
+          "passed": 5,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0,
+          "executed": 5
+        }
+      },
+      {
+        "name": "contract-utils-9c387b-28",
+        "status": "passed",
+        "role": "contract",
+        "scope": "retained",
+        "capabilities": [
+          "utils"
+        ],
+        "baseline_status": "passed",
+        "candidate_status": "passed",
+        "target_capabilities": [],
+        "attribution": "unattributed",
+        "facts_given": 10,
+        "baseline_cases": {
+          "passed": 7,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0,
+          "executed": 7
+        },
+        "candidate_cases": {
+          "passed": 7,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0,
+          "executed": 7
+        }
+      },
+      {
+        "name": "contract-utils-9c387b-29",
+        "status": "passed",
+        "role": "contract",
+        "scope": "retained",
+        "capabilities": [
+          "utils"
+        ],
+        "baseline_status": "passed",
+        "candidate_status": "passed",
+        "target_capabilities": [],
+        "attribution": "unattributed",
+        "facts_given": 8,
+        "baseline_cases": {
+          "passed": 10,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0,
+          "executed": 10
+        },
+        "candidate_cases": {
+          "passed": 10,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0,
+          "executed": 10
+        }
+      }
+    ],
+    "leaf_coverage": {
+      "status": "ready",
+      "strict": false,
+      "valid": [
+        "async",
+        "auto",
+        "bells",
+        "cli",
+        "compat",
+        "concurrent",
+        "dask",
+        "examples",
+        "gui",
+        "iterables",
+        "logging",
+        "monitor",
+        "notebook",
+        "notifications",
+        "pandas",
+        "rich",
+        "tk",
+        "tooling"
+      ],
+      "missing": [
+        "benchmarks",
+        "core",
+        "keras",
+        "utils"
+      ],
+      "exempted": [],
+      "why_missing": {
+        "benchmarks": [
+          "no_behavioral_knockout_failure"
+        ],
+        "core": [
+          "no_behavioral_knockout_failure",
+          "pinned_without_knockout_evidence"
+        ],
+        "keras": [
+          "no_behavioral_knockout_failure",
+          "no_passing_cases"
+        ],
+        "utils": [
+          "no_behavioral_knockout_failure",
+          "pinned_without_knockout_evidence"
+        ]
+      }
+    },
+    "facts_given_checks": 41,
+    "source_reference_capabilities": 7,
+    "unmapped_candidate_files": [],
+    "ignored_mapping_files": [
+      "文件 008",
+      "文件 009",
+      "README.rst",
+      "asv.conf.json",
+      "文件 031",
+      "文件 085"
+    ],
+    "code_size": {
+      "metric": "tokens",
+      "tokenizer": {
+        "library": "tiktoken",
+        "version": "0.12.0",
+        "encoding": "cl100k_base",
+        "ranks_sha256": "223921b76ee99bde995b7ff738513eef100fb51d18c93597a113bcffe865b2a7",
+        "text_policy": "raw_decoded_text_per_file",
+        "classification": "source_and_configuration_v2",
+        "special_tokens": "ordinary_text",
+        "file_boundaries": "independent_sum",
+        "decoding": "python_encoding_cookie_else_utf8_strict",
+        "exclusion_policy": "unchanged_original_tests_documentation_launcher_configuration_binary_assets"
+      },
+      "before": 70579,
+      "after": 32436,
+      "reduction_percent": 54.043,
+      "source_before": 45979,
+      "source_after": 26103,
+      "configuration_before": 24600,
+      "configuration_after": 6333,
+      "observed_before": 70579,
+      "observed_after": 32436,
+      "complete": true,
+      "target_tokens": 35289,
+      "budget_status": "met",
+      "target_policy": "advisory",
+      "code_only": {
+        "before": 57128,
+        "after": 32275
+      },
+      "documented_percent": {
+        "original": 63.3,
+        "delivered": 0.0
+      }
+    },
+    "size_attribution": {
+      "metric": "tokens",
+      "tokenizer": {
+        "classification": "source_and_configuration_v2",
+        "decoding": "python_encoding_cookie_else_utf8_strict",
+        "encoding": "cl100k_base",
+        "exclusion_policy": "unchanged_original_tests_documentation_launcher_configuration_binary_assets",
+        "file_boundaries": "independent_sum",
+        "library": "tiktoken",
+        "ranks_sha256": "223921b76ee99bde995b7ff738513eef100fb51d18c93597a113bcffe865b2a7",
+        "special_tokens": "ordinary_text",
+        "text_policy": "raw_decoded_text_per_file",
+        "version": "0.12.0"
+      },
+      "complete": true,
+      "original_total": 70579,
+      "selected_original_estimate": 70579,
+      "candidate_total": 32436,
+      "overall_reduction": {
+        "tokens": 38143,
+        "percent": 54.043
+      },
+      "scope_reduction_estimate": {
+        "tokens": 0,
+        "percent": 0.0
+      },
+      "rewrite_reduction_estimate": {
+        "tokens": 38143,
+        "percent": 54.043
+      },
+      "shared_scope_files": [],
+      "method": "unique_mapped_source_plus_all_original_configuration",
+      "estimate_only": false,
+      "limitations": [
+        "Scope and rewrite attribution are mapped-file estimates, not exact semantic savings. Shared files count once and retained/removed code within them cannot be separated.",
+        "All original configuration is charged to the retained footprint. Configuration changes appear in the rewrite estimate and may include scope-related savings.",
+        "Overall reduction uses the full original as denominator; rewrite reduction uses the selected original estimate. Their percentages must not be added.",
+        "Negative reductions indicate growth; incomplete measurements do not establish savings."
+      ]
+    }
+  },
+  "nodes": [
+    {
+      "id": "core",
+      "parent": null,
+      "name": "核心进度条",
+      "kind": "capability",
+      "selection_reason": "foundation",
+      "loc": {
+        "before": 1577,
+        "after": 625,
+        "reduction_percent": 60.368,
+        "method": "mapped_file_union",
+        "shared": true,
+        "before_files": [
+          {
+            "path": "文件 051",
+            "lines": 38
+          },
+          {
+            "path": "文件 083",
+            "lines": 1532
+          },
+          {
+            "path": "文件 088",
+            "lines": 7
+          }
+        ],
+        "after_files": [
+          {
+            "path": "文件 051",
+            "lines": 26
+          },
+          {
+            "path": "文件 083",
+            "lines": 598
+          },
+          {
+            "path": "文件 088",
+            "lines": 1
+          }
+        ],
+        "mapping_status": "mapped"
+      },
+      "validation": {
+        "status": "unknown",
+        "executed": false,
+        "baseline_status": "not_run",
+        "candidate_status": "not_run",
+        "checks": [],
+        "coverage": "direct_checks",
+        "scope": "capability_only",
+        "independently_tested": false,
+        "obligations": [
+          {
+            "kind": "coverage",
+            "status": "unknown",
+            "reason": "no_direct_checks"
+          }
+        ],
+        "related_checks": [
+          {
+            "name": "contract-core-9c387b-22",
+            "status": "passed",
+            "role": "contract",
+            "scope": "retained",
+            "capabilities": [
+              "core"
+            ],
+            "baseline_status": "passed",
+            "candidate_status": "passed",
+            "target_capabilities": [],
+            "attribution": "unattributed",
+            "facts_given": 7,
+            "baseline_cases": {
+              "passed": 29,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 29
+            },
+            "candidate_cases": {
+              "passed": 29,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 29
+            }
+          },
+          {
+            "name": "contract-core-9c387b-23",
+            "status": "passed",
+            "role": "contract",
+            "scope": "retained",
+            "capabilities": [
+              "core"
+            ],
+            "baseline_status": "passed",
+            "candidate_status": "passed",
+            "target_capabilities": [],
+            "attribution": "unattributed",
+            "facts_given": 12,
+            "baseline_cases": {
+              "passed": 11,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 11
+            },
+            "candidate_cases": {
+              "passed": 11,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 11
+            }
+          },
+          {
+            "name": "contract-core-9c387b-24",
+            "status": "passed",
+            "role": "contract",
+            "scope": "retained",
+            "capabilities": [
+              "core"
+            ],
+            "baseline_status": "passed",
+            "candidate_status": "passed",
+            "target_capabilities": [],
+            "attribution": "unattributed",
+            "facts_given": 11,
+            "baseline_cases": {
+              "passed": 12,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 12
+            },
+            "candidate_cases": {
+              "passed": 12,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 12
+            }
+          },
+          {
+            "name": "contract-core-9c387b-25",
+            "status": "passed",
+            "role": "contract",
+            "scope": "retained",
+            "capabilities": [
+              "core"
+            ],
+            "baseline_status": "passed",
+            "candidate_status": "passed",
+            "target_capabilities": [],
+            "attribution": "unattributed",
+            "facts_given": 11,
+            "baseline_cases": {
+              "passed": 6,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 6
+            },
+            "candidate_cases": {
+              "passed": 6,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 6
+            }
+          },
+          {
+            "name": "contract-core-9c387b-26",
+            "status": "passed",
+            "role": "contract",
+            "scope": "retained",
+            "capabilities": [
+              "core"
+            ],
+            "baseline_status": "passed",
+            "candidate_status": "passed",
+            "target_capabilities": [],
+            "attribution": "unattributed",
+            "facts_given": 5,
+            "baseline_cases": {
+              "passed": 5,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 5
+            },
+            "candidate_cases": {
+              "passed": 5,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 5
+            }
+          },
+          {
+            "name": "original_perf",
+            "status": "passed",
+            "role": "original",
+            "scope": "retained",
+            "capabilities": [
+              "core",
+              "benchmarks"
+            ],
+            "baseline_status": "passed",
+            "candidate_status": "passed",
+            "target_capabilities": [],
+            "attribution": "unattributed",
+            "facts_given": 13,
+            "baseline_cases": {
+              "passed": 7,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 7
+            },
+            "candidate_cases": {
+              "passed": 7,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 7
+            }
+          },
+          {
+            "name": "original_rlock",
+            "status": "passed",
+            "role": "original",
+            "scope": "retained",
+            "capabilities": [
+              "core",
+              "monitor"
+            ],
+            "baseline_status": "passed",
+            "candidate_status": "passed",
+            "target_capabilities": [],
+            "attribution": "unattributed",
+            "facts_given": 2,
+            "baseline_cases": {
+              "passed": 1,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 1
+            },
+            "candidate_cases": {
+              "passed": 1,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 1
+            }
+          },
+          {
+            "name": "original_version",
+            "status": "passed",
+            "role": "original",
+            "scope": "retained",
+            "capabilities": [
+              "core"
+            ],
+            "baseline_status": "passed",
+            "candidate_status": "passed",
+            "target_capabilities": [],
+            "attribution": "unattributed",
+            "facts_given": 1,
+            "baseline_cases": {
+              "passed": 1,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 1
+            },
+            "candidate_cases": {
+              "passed": 1,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 1
+            }
+          },
+          {
+            "name": "public_iteration_output",
+            "status": "passed",
+            "role": "contract",
+            "scope": "retained",
+            "capabilities": [
+              "core"
+            ],
+            "baseline_status": "passed",
+            "candidate_status": "passed",
+            "target_capabilities": [],
+            "attribution": "unattributed"
+          }
+        ],
+        "context": {
+          "status": "verified",
+          "executed": true,
+          "baseline_status": "passed",
+          "candidate_status": "passed",
+          "checks": [
+            {
+              "name": "contract-core-9c387b-22",
+              "status": "passed",
+              "role": "contract",
+              "scope": "retained",
+              "capabilities": [
+                "core"
+              ],
+              "baseline_status": "passed",
+              "candidate_status": "passed",
+              "target_capabilities": [],
+              "attribution": "unattributed",
+              "facts_given": 7,
+              "baseline_cases": {
+                "passed": 29,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 29
+              },
+              "candidate_cases": {
+                "passed": 29,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 29
+              }
+            },
+            {
+              "name": "contract-core-9c387b-23",
+              "status": "passed",
+              "role": "contract",
+              "scope": "retained",
+              "capabilities": [
+                "core"
+              ],
+              "baseline_status": "passed",
+              "candidate_status": "passed",
+              "target_capabilities": [],
+              "attribution": "unattributed",
+              "facts_given": 12,
+              "baseline_cases": {
+                "passed": 11,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 11
+              },
+              "candidate_cases": {
+                "passed": 11,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 11
+              }
+            },
+            {
+              "name": "contract-core-9c387b-24",
+              "status": "passed",
+              "role": "contract",
+              "scope": "retained",
+              "capabilities": [
+                "core"
+              ],
+              "baseline_status": "passed",
+              "candidate_status": "passed",
+              "target_capabilities": [],
+              "attribution": "unattributed",
+              "facts_given": 11,
+              "baseline_cases": {
+                "passed": 12,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 12
+              },
+              "candidate_cases": {
+                "passed": 12,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 12
+              }
+            },
+            {
+              "name": "contract-core-9c387b-25",
+              "status": "passed",
+              "role": "contract",
+              "scope": "retained",
+              "capabilities": [
+                "core"
+              ],
+              "baseline_status": "passed",
+              "candidate_status": "passed",
+              "target_capabilities": [],
+              "attribution": "unattributed",
+              "facts_given": 11,
+              "baseline_cases": {
+                "passed": 6,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 6
+              },
+              "candidate_cases": {
+                "passed": 6,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 6
+              }
+            },
+            {
+              "name": "contract-core-9c387b-26",
+              "status": "passed",
+              "role": "contract",
+              "scope": "retained",
+              "capabilities": [
+                "core"
+              ],
+              "baseline_status": "passed",
+              "candidate_status": "passed",
+              "target_capabilities": [],
+              "attribution": "unattributed",
+              "facts_given": 5,
+              "baseline_cases": {
+                "passed": 5,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 5
+              },
+              "candidate_cases": {
+                "passed": 5,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 5
+              }
+            },
+            {
+              "name": "original_perf",
+              "status": "passed",
+              "role": "original",
+              "scope": "retained",
+              "capabilities": [
+                "core",
+                "benchmarks"
+              ],
+              "baseline_status": "passed",
+              "candidate_status": "passed",
+              "target_capabilities": [],
+              "attribution": "unattributed",
+              "facts_given": 13,
+              "baseline_cases": {
+                "passed": 7,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 7
+              },
+              "candidate_cases": {
+                "passed": 7,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 7
+              }
+            },
+            {
+              "name": "original_rlock",
+              "status": "passed",
+              "role": "original",
+              "scope": "retained",
+              "capabilities": [
+                "core",
+                "monitor"
+              ],
+              "baseline_status": "passed",
+              "candidate_status": "passed",
+              "target_capabilities": [],
+              "attribution": "unattributed",
+              "facts_given": 2,
+              "baseline_cases": {
+                "passed": 1,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 1
+              },
+              "candidate_cases": {
+                "passed": 1,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 1
+              }
+            },
+            {
+              "name": "original_version",
+              "status": "passed",
+              "role": "original",
+              "scope": "retained",
+              "capabilities": [
+                "core"
+              ],
+              "baseline_status": "passed",
+              "candidate_status": "passed",
+              "target_capabilities": [],
+              "attribution": "unattributed",
+              "facts_given": 1,
+              "baseline_cases": {
+                "passed": 1,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 1
+              },
+              "candidate_cases": {
+                "passed": 1,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 1
+              }
+            },
+            {
+              "name": "public_iteration_output",
+              "status": "passed",
+              "role": "contract",
+              "scope": "retained",
+              "capabilities": [
+                "core"
+              ],
+              "baseline_status": "passed",
+              "candidate_status": "passed",
+              "target_capabilities": [],
+              "attribution": "unattributed"
+            }
+          ],
+          "coverage": "mapped_checks",
+          "scope": "capability_and_descendants",
+          "independently_tested": false,
+          "blockers": [],
+          "obligations": [
+            {
+              "status": "verified",
+              "check": "original_rlock",
+              "kind": "declared_check"
+            },
+            {
+              "status": "verified",
+              "check": "original_version",
+              "kind": "declared_check"
+            },
+            {
+              "status": "verified",
+              "check": "original_perf",
+              "kind": "declared_check"
+            },
+            {
+              "status": "verified",
+              "check": "public_iteration_output",
+              "kind": "declared_check"
+            },
+            {
+              "status": "verified",
+              "check": "contract-core-9c387b-22",
+              "kind": "declared_check"
+            },
+            {
+              "status": "verified",
+              "check": "contract-core-9c387b-23",
+              "kind": "declared_check"
+            },
+            {
+              "status": "verified",
+              "check": "contract-core-9c387b-24",
+              "kind": "declared_check"
+            },
+            {
+              "status": "verified",
+              "check": "contract-core-9c387b-25",
+              "kind": "declared_check"
+            },
+            {
+              "status": "verified",
+              "check": "contract-core-9c387b-26",
+              "kind": "declared_check"
+            }
+          ],
+          "evidence_href": "evidence.json"
+        },
+        "evidence_href": "evidence.json",
+        "blockers": [
+          "No valid leaf test: no behavioral knockout failure, pinned without knockout evidence"
+        ],
+        "evidence": {
+          "category": "related_passed",
+          "direct": {
+            "total": 0,
+            "passed": 0,
+            "failed": 0,
+            "inconclusive": 0
+          },
+          "related": {
+            "total": 9,
+            "passed": 9,
+            "failed": 0,
+            "inconclusive": 0
+          },
+          "coverage": "limited",
+          "count_unit": "check_records"
+        }
+      },
+      "tokens": {
+        "metric": "source_tokens",
+        "before": 13620,
+        "after": 5654,
+        "reduction_percent": 58.488,
+        "mapping_status": "mapped",
+        "scope": "Mapped source only; configuration tokens are measured globally, not allocated to modules.",
+        "before_files": [
+          {
+            "path": "文件 051",
+            "tokens": 484
+          },
+          {
+            "path": "文件 083",
+            "tokens": 13079
+          },
+          {
+            "path": "文件 088",
+            "tokens": 57
+          }
+        ],
+        "after_files": [
+          {
+            "path": "文件 051",
+            "tokens": 272
+          },
+          {
+            "path": "文件 083",
+            "tokens": 5375
+          },
+          {
+            "path": "文件 088",
+            "tokens": 7
+          }
+        ]
+      }
+    },
+    {
+      "id": "utils",
+      "parent": null,
+      "name": "终端与环境支持",
+      "kind": "capability",
+      "selection_reason": "foundation",
+      "loc": {
+        "before": 328,
+        "after": 200,
+        "reduction_percent": 39.024,
+        "method": "mapped_file_union",
+        "shared": true,
+        "before_files": [
+          {
+            "path": "文件 087",
+            "lines": 328
+          }
+        ],
+        "after_files": [
+          {
+            "path": "文件 087",
+            "lines": 200
+          }
+        ],
+        "mapping_status": "mapped"
+      },
+      "validation": {
+        "status": "unknown",
+        "executed": false,
+        "baseline_status": "not_run",
+        "candidate_status": "not_run",
+        "checks": [],
+        "coverage": "direct_checks",
+        "scope": "capability_only",
+        "independently_tested": false,
+        "obligations": [
+          {
+            "kind": "coverage",
+            "status": "unknown",
+            "reason": "no_direct_checks"
+          }
+        ],
+        "related_checks": [
+          {
+            "name": "contract-utils-9c387b-28",
+            "status": "passed",
+            "role": "contract",
+            "scope": "retained",
+            "capabilities": [
+              "utils"
+            ],
+            "baseline_status": "passed",
+            "candidate_status": "passed",
+            "target_capabilities": [],
+            "attribution": "unattributed",
+            "facts_given": 10,
+            "baseline_cases": {
+              "passed": 7,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 7
+            },
+            "candidate_cases": {
+              "passed": 7,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 7
+            }
+          },
+          {
+            "name": "contract-utils-9c387b-29",
+            "status": "passed",
+            "role": "contract",
+            "scope": "retained",
+            "capabilities": [
+              "utils"
+            ],
+            "baseline_status": "passed",
+            "candidate_status": "passed",
+            "target_capabilities": [],
+            "attribution": "unattributed",
+            "facts_given": 8,
+            "baseline_cases": {
+              "passed": 10,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 10
+            },
+            "candidate_cases": {
+              "passed": 10,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 10
+            }
+          },
+          {
+            "name": "original_utils",
+            "status": "passed",
+            "role": "original",
+            "scope": "retained",
+            "capabilities": [
+              "utils"
+            ],
+            "baseline_status": "passed",
+            "candidate_status": "passed",
+            "target_capabilities": [],
+            "attribution": "unattributed",
+            "facts_given": 4,
+            "baseline_cases": {
+              "passed": 4,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 4
+            },
+            "candidate_cases": {
+              "passed": 4,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 4
+            }
+          }
+        ],
+        "context": {
+          "status": "verified",
+          "executed": true,
+          "baseline_status": "passed",
+          "candidate_status": "passed",
+          "checks": [
+            {
+              "name": "contract-utils-9c387b-28",
+              "status": "passed",
+              "role": "contract",
+              "scope": "retained",
+              "capabilities": [
+                "utils"
+              ],
+              "baseline_status": "passed",
+              "candidate_status": "passed",
+              "target_capabilities": [],
+              "attribution": "unattributed",
+              "facts_given": 10,
+              "baseline_cases": {
+                "passed": 7,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 7
+              },
+              "candidate_cases": {
+                "passed": 7,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 7
+              }
+            },
+            {
+              "name": "contract-utils-9c387b-29",
+              "status": "passed",
+              "role": "contract",
+              "scope": "retained",
+              "capabilities": [
+                "utils"
+              ],
+              "baseline_status": "passed",
+              "candidate_status": "passed",
+              "target_capabilities": [],
+              "attribution": "unattributed",
+              "facts_given": 8,
+              "baseline_cases": {
+                "passed": 10,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 10
+              },
+              "candidate_cases": {
+                "passed": 10,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 10
+              }
+            },
+            {
+              "name": "original_utils",
+              "status": "passed",
+              "role": "original",
+              "scope": "retained",
+              "capabilities": [
+                "utils"
+              ],
+              "baseline_status": "passed",
+              "candidate_status": "passed",
+              "target_capabilities": [],
+              "attribution": "unattributed",
+              "facts_given": 4,
+              "baseline_cases": {
+                "passed": 4,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 4
+              },
+              "candidate_cases": {
+                "passed": 4,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 4
+              }
+            }
+          ],
+          "coverage": "mapped_checks",
+          "scope": "capability_and_descendants",
+          "independently_tested": false,
+          "blockers": [],
+          "obligations": [
+            {
+              "status": "verified",
+              "check": "original_utils",
+              "kind": "declared_check"
+            },
+            {
+              "status": "verified",
+              "check": "contract-utils-9c387b-28",
+              "kind": "declared_check"
+            },
+            {
+              "status": "verified",
+              "check": "contract-utils-9c387b-29",
+              "kind": "declared_check"
+            }
+          ],
+          "evidence_href": "evidence.json"
+        },
+        "evidence_href": "evidence.json",
+        "blockers": [
+          "No valid leaf test: no behavioral knockout failure, pinned without knockout evidence"
+        ],
+        "evidence": {
+          "category": "related_passed",
+          "direct": {
+            "total": 0,
+            "passed": 0,
+            "failed": 0,
+            "inconclusive": 0
+          },
+          "related": {
+            "total": 3,
+            "passed": 3,
+            "failed": 0,
+            "inconclusive": 0
+          },
+          "coverage": "limited",
+          "count_unit": "check_records"
+        }
+      },
+      "tokens": {
+        "metric": "source_tokens",
+        "before": 2268,
+        "after": 1374,
+        "reduction_percent": 39.418,
+        "mapping_status": "mapped",
+        "scope": "Mapped source only; configuration tokens are measured globally, not allocated to modules.",
+        "before_files": [
+          {
+            "path": "文件 087",
+            "tokens": 2268
+          }
+        ],
+        "after_files": [
+          {
+            "path": "文件 087",
+            "tokens": 1374
+          }
+        ]
+      }
+    },
+    {
+      "id": "monitor",
+      "parent": null,
+      "name": "后台刷新与同步",
+      "kind": "capability",
+      "selection_reason": "foundation",
+      "loc": {
+        "before": 104,
+        "after": 53,
+        "reduction_percent": 49.038,
+        "method": "mapped_file_union",
+        "shared": true,
+        "before_files": [
+          {
+            "path": "文件 055",
+            "lines": 104
+          }
+        ],
+        "after_files": [
+          {
+            "path": "文件 055",
+            "lines": 53
+          }
+        ],
+        "mapping_status": "mapped"
+      },
+      "validation": {
+        "status": "verified",
+        "executed": true,
+        "baseline_status": "passed",
+        "candidate_status": "passed",
+        "checks": [
+          {
+            "name": "contract-monitor-9c387b-20",
+            "status": "passed",
+            "role": "contract",
+            "scope": "retained",
+            "capabilities": [
+              "monitor"
+            ],
+            "baseline_status": "passed",
+            "candidate_status": "passed",
+            "target_capabilities": [
+              "monitor"
+            ],
+            "attribution": "knockout_confirmed",
+            "facts_given": 11,
+            "baseline_cases": {
+              "passed": 14,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 14
+            },
+            "candidate_cases": {
+              "passed": 14,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 14
+            }
+          }
+        ],
+        "coverage": "direct_checks",
+        "scope": "capability_only",
+        "independently_tested": false,
+        "obligations": [
+          {
+            "status": "verified",
+            "check": "contract-monitor-9c387b-20",
+            "kind": "declared_check"
+          }
+        ],
+        "related_checks": [
+          {
+            "name": "original_rlock",
+            "status": "passed",
+            "role": "original",
+            "scope": "retained",
+            "capabilities": [
+              "core",
+              "monitor"
+            ],
+            "baseline_status": "passed",
+            "candidate_status": "passed",
+            "target_capabilities": [],
+            "attribution": "unattributed",
+            "facts_given": 2,
+            "baseline_cases": {
+              "passed": 1,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 1
+            },
+            "candidate_cases": {
+              "passed": 1,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 1
+            }
+          }
+        ],
+        "context": {
+          "status": "verified",
+          "executed": true,
+          "baseline_status": "passed",
+          "candidate_status": "passed",
+          "checks": [
+            {
+              "name": "contract-monitor-9c387b-20",
+              "status": "passed",
+              "role": "contract",
+              "scope": "retained",
+              "capabilities": [
+                "monitor"
+              ],
+              "baseline_status": "passed",
+              "candidate_status": "passed",
+              "target_capabilities": [
+                "monitor"
+              ],
+              "attribution": "knockout_confirmed",
+              "facts_given": 11,
+              "baseline_cases": {
+                "passed": 14,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 14
+              },
+              "candidate_cases": {
+                "passed": 14,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 14
+              }
+            },
+            {
+              "name": "original_rlock",
+              "status": "passed",
+              "role": "original",
+              "scope": "retained",
+              "capabilities": [
+                "core",
+                "monitor"
+              ],
+              "baseline_status": "passed",
+              "candidate_status": "passed",
+              "target_capabilities": [],
+              "attribution": "unattributed",
+              "facts_given": 2,
+              "baseline_cases": {
+                "passed": 1,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 1
+              },
+              "candidate_cases": {
+                "passed": 1,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 1
+              }
+            }
+          ],
+          "coverage": "mapped_checks",
+          "scope": "capability_and_descendants",
+          "independently_tested": false,
+          "blockers": [],
+          "obligations": [
+            {
+              "status": "verified",
+              "check": "original_rlock",
+              "kind": "declared_check"
+            },
+            {
+              "status": "verified",
+              "check": "contract-monitor-9c387b-20",
+              "kind": "declared_check"
+            }
+          ],
+          "evidence_href": "evidence.json"
+        },
+        "evidence_href": "evidence.json",
+        "evidence": {
+          "category": "direct_passed",
+          "direct": {
+            "total": 1,
+            "passed": 1,
+            "failed": 0,
+            "inconclusive": 0
+          },
+          "related": {
+            "total": 1,
+            "passed": 1,
+            "failed": 0,
+            "inconclusive": 0
+          },
+          "coverage": "declared_checks_only",
+          "count_unit": "check_records"
+        }
+      },
+      "tokens": {
+        "metric": "source_tokens",
+        "before": 824,
+        "after": 379,
+        "reduction_percent": 54.005,
+        "mapping_status": "mapped",
+        "scope": "Mapped source only; configuration tokens are measured globally, not allocated to modules.",
+        "before_files": [
+          {
+            "path": "文件 055",
+            "tokens": 824
+          }
+        ],
+        "after_files": [
+          {
+            "path": "文件 055",
+            "tokens": 379
+          }
+        ]
+      }
+    },
+    {
+      "id": "cli",
+      "parent": null,
+      "name": "管道命令行",
+      "kind": "capability",
+      "selection_reason": "selected_dependency",
+      "loc": {
+        "before": 346,
+        "after": 600,
+        "reduction_percent": -73.41,
+        "method": "mapped_file_union",
+        "shared": true,
+        "before_files": [
+          {
+            "path": "文件 052",
+            "lines": 3
+          },
+          {
+            "path": "文件 066",
+            "lines": 324
+          },
+          {
+            "path": "文件 067",
+            "lines": 19
+          }
+        ],
+        "after_files": [
+          {
+            "path": "文件 051",
+            "lines": 26
+          },
+          {
+            "path": "文件 052",
+            "lines": 4
+          },
+          {
+            "path": "文件 053",
+            "lines": 126
+          },
+          {
+            "path": "文件 057",
+            "lines": 257
+          },
+          {
+            "path": "文件 066",
+            "lines": 168
+          },
+          {
+            "path": "文件 067",
+            "lines": 19
+          }
+        ],
+        "mapping_status": "mapped"
+      },
+      "validation": {
+        "status": "verified",
+        "executed": true,
+        "baseline_status": "passed",
+        "candidate_status": "passed",
+        "checks": [
+          {
+            "name": "contract-cli-9c387b-3",
+            "status": "passed",
+            "role": "contract",
+            "scope": "retained",
+            "capabilities": [
+              "cli"
+            ],
+            "baseline_status": "passed",
+            "candidate_status": "passed",
+            "target_capabilities": [
+              "cli"
+            ],
+            "attribution": "knockout_confirmed",
+            "facts_given": 12,
+            "baseline_cases": {
+              "passed": 48,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 48
+            },
+            "candidate_cases": {
+              "passed": 48,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 48
+            }
+          },
+          {
+            "name": "contract-cli-9c387b-4",
+            "status": "passed",
+            "role": "contract",
+            "scope": "retained",
+            "capabilities": [
+              "cli"
+            ],
+            "baseline_status": "passed",
+            "candidate_status": "passed",
+            "target_capabilities": [
+              "cli"
+            ],
+            "attribution": "knockout_confirmed",
+            "facts_given": 12,
+            "baseline_cases": {
+              "passed": 18,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 18
+            },
+            "candidate_cases": {
+              "passed": 18,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 18
+            }
+          }
+        ],
+        "coverage": "direct_checks",
+        "scope": "capability_only",
+        "independently_tested": false,
+        "obligations": [
+          {
+            "status": "verified",
+            "check": "contract-cli-9c387b-3",
+            "kind": "declared_check"
+          },
+          {
+            "status": "verified",
+            "check": "contract-cli-9c387b-4",
+            "kind": "declared_check"
+          }
+        ],
+        "related_checks": [],
+        "context": {
+          "status": "verified",
+          "executed": true,
+          "baseline_status": "passed",
+          "candidate_status": "passed",
+          "checks": [
+            {
+              "name": "contract-cli-9c387b-3",
+              "status": "passed",
+              "role": "contract",
+              "scope": "retained",
+              "capabilities": [
+                "cli"
+              ],
+              "baseline_status": "passed",
+              "candidate_status": "passed",
+              "target_capabilities": [
+                "cli"
+              ],
+              "attribution": "knockout_confirmed",
+              "facts_given": 12,
+              "baseline_cases": {
+                "passed": 48,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 48
+              },
+              "candidate_cases": {
+                "passed": 48,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 48
+              }
+            },
+            {
+              "name": "contract-cli-9c387b-4",
+              "status": "passed",
+              "role": "contract",
+              "scope": "retained",
+              "capabilities": [
+                "cli"
+              ],
+              "baseline_status": "passed",
+              "candidate_status": "passed",
+              "target_capabilities": [
+                "cli"
+              ],
+              "attribution": "knockout_confirmed",
+              "facts_given": 12,
+              "baseline_cases": {
+                "passed": 18,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 18
+              },
+              "candidate_cases": {
+                "passed": 18,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 18
+              }
+            }
+          ],
+          "coverage": "mapped_checks",
+          "scope": "capability_and_descendants",
+          "independently_tested": false,
+          "blockers": [],
+          "obligations": [
+            {
+              "status": "verified",
+              "check": "contract-cli-9c387b-3",
+              "kind": "declared_check"
+            },
+            {
+              "status": "verified",
+              "check": "contract-cli-9c387b-4",
+              "kind": "declared_check"
+            }
+          ],
+          "evidence_href": "evidence.json"
+        },
+        "evidence_href": "evidence.json",
+        "evidence": {
+          "category": "direct_passed",
+          "direct": {
+            "total": 2,
+            "passed": 2,
+            "failed": 0,
+            "inconclusive": 0
+          },
+          "related": {
+            "total": 0,
+            "passed": 0,
+            "failed": 0,
+            "inconclusive": 0
+          },
+          "coverage": "declared_checks_only",
+          "count_unit": "check_records"
+        }
+      },
+      "tokens": {
+        "metric": "source_tokens",
+        "before": 3034,
+        "after": 6086,
+        "reduction_percent": -100.593,
+        "mapping_status": "mapped",
+        "scope": "Mapped source only; configuration tokens are measured globally, not allocated to modules.",
+        "before_files": [
+          {
+            "path": "文件 052",
+            "tokens": 8
+          },
+          {
+            "path": "文件 066",
+            "tokens": 2746
+          },
+          {
+            "path": "文件 067",
+            "tokens": 280
+          }
+        ],
+        "after_files": [
+          {
+            "path": "文件 051",
+            "tokens": 272
+          },
+          {
+            "path": "文件 052",
+            "tokens": 17
+          },
+          {
+            "path": "文件 053",
+            "tokens": 1616
+          },
+          {
+            "path": "文件 057",
+            "tokens": 2567
+          },
+          {
+            "path": "文件 066",
+            "tokens": 1334
+          },
+          {
+            "path": "文件 067",
+            "tokens": 280
+          }
+        ]
+      }
+    },
+    {
+      "id": "compat",
+      "parent": null,
+      "name": "历史接口兼容",
+      "kind": "capability",
+      "selection_reason": "selected",
+      "loc": {
+        "before": 47,
+        "after": 108,
+        "reduction_percent": -129.787,
+        "method": "mapped_file_union",
+        "shared": true,
+        "before_files": [
+          {
+            "path": "文件 054",
+            "lines": 9
+          },
+          {
+            "path": "文件 058",
+            "lines": 9
+          },
+          {
+            "path": "文件 059",
+            "lines": 9
+          },
+          {
+            "path": "文件 060",
+            "lines": 9
+          },
+          {
+            "path": "文件 062",
+            "lines": 11
+          }
+        ],
+        "after_files": [
+          {
+            "path": "文件 051",
+            "lines": 26
+          },
+          {
+            "path": "文件 054",
+            "lines": 5
+          },
+          {
+            "path": "文件 056",
+            "lines": 56
+          },
+          {
+            "path": "文件 058",
+            "lines": 4
+          },
+          {
+            "path": "文件 059",
+            "lines": 5
+          },
+          {
+            "path": "文件 060",
+            "lines": 5
+          },
+          {
+            "path": "文件 062",
+            "lines": 7
+          }
+        ],
+        "mapping_status": "mapped"
+      },
+      "validation": {
+        "status": "verified",
+        "executed": true,
+        "baseline_status": "passed",
+        "candidate_status": "passed",
+        "checks": [
+          {
+            "name": "contract-compat-9c387b-5",
+            "status": "passed",
+            "role": "contract",
+            "scope": "retained",
+            "capabilities": [
+              "compat"
+            ],
+            "baseline_status": "passed",
+            "candidate_status": "passed",
+            "target_capabilities": [
+              "compat"
+            ],
+            "attribution": "single_capability",
+            "facts_given": 7,
+            "baseline_cases": {
+              "passed": 16,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 16
+            },
+            "candidate_cases": {
+              "passed": 16,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 16
+            }
+          },
+          {
+            "name": "contract-compat-9c387b-6",
+            "status": "passed",
+            "role": "contract",
+            "scope": "retained",
+            "capabilities": [
+              "compat"
+            ],
+            "baseline_status": "passed",
+            "candidate_status": "passed",
+            "target_capabilities": [
+              "compat"
+            ],
+            "attribution": "single_capability",
+            "facts_given": 8,
+            "baseline_cases": {
+              "passed": 4,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 4
+            },
+            "candidate_cases": {
+              "passed": 4,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 4
+            }
+          }
+        ],
+        "coverage": "direct_checks",
+        "scope": "capability_only",
+        "independently_tested": false,
+        "obligations": [
+          {
+            "status": "verified",
+            "check": "contract-compat-9c387b-5",
+            "kind": "declared_check"
+          },
+          {
+            "status": "verified",
+            "check": "contract-compat-9c387b-6",
+            "kind": "declared_check"
+          }
+        ],
+        "related_checks": [],
+        "context": {
+          "status": "verified",
+          "executed": true,
+          "baseline_status": "passed",
+          "candidate_status": "passed",
+          "checks": [
+            {
+              "name": "contract-compat-9c387b-5",
+              "status": "passed",
+              "role": "contract",
+              "scope": "retained",
+              "capabilities": [
+                "compat"
+              ],
+              "baseline_status": "passed",
+              "candidate_status": "passed",
+              "target_capabilities": [
+                "compat"
+              ],
+              "attribution": "single_capability",
+              "facts_given": 7,
+              "baseline_cases": {
+                "passed": 16,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 16
+              },
+              "candidate_cases": {
+                "passed": 16,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 16
+              }
+            },
+            {
+              "name": "contract-compat-9c387b-6",
+              "status": "passed",
+              "role": "contract",
+              "scope": "retained",
+              "capabilities": [
+                "compat"
+              ],
+              "baseline_status": "passed",
+              "candidate_status": "passed",
+              "target_capabilities": [
+                "compat"
+              ],
+              "attribution": "single_capability",
+              "facts_given": 8,
+              "baseline_cases": {
+                "passed": 4,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 4
+              },
+              "candidate_cases": {
+                "passed": 4,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 4
+              }
+            }
+          ],
+          "coverage": "mapped_checks",
+          "scope": "capability_and_descendants",
+          "independently_tested": false,
+          "blockers": [],
+          "obligations": [
+            {
+              "status": "verified",
+              "check": "contract-compat-9c387b-5",
+              "kind": "declared_check"
+            },
+            {
+              "status": "verified",
+              "check": "contract-compat-9c387b-6",
+              "kind": "declared_check"
+            }
+          ],
+          "evidence_href": "evidence.json"
+        },
+        "evidence_href": "evidence.json",
+        "evidence": {
+          "category": "direct_passed",
+          "direct": {
+            "total": 2,
+            "passed": 2,
+            "failed": 0,
+            "inconclusive": 0
+          },
+          "related": {
+            "total": 0,
+            "passed": 0,
+            "failed": 0,
+            "inconclusive": 0
+          },
+          "coverage": "declared_checks_only",
+          "count_unit": "check_records"
+        }
+      },
+      "tokens": {
+        "metric": "source_tokens",
+        "before": 544,
+        "after": 1120,
+        "reduction_percent": -105.882,
+        "mapping_status": "mapped",
+        "scope": "Mapped source only; configuration tokens are measured globally, not allocated to modules.",
+        "before_files": [
+          {
+            "path": "文件 054",
+            "tokens": 92
+          },
+          {
+            "path": "文件 058",
+            "tokens": 94
+          },
+          {
+            "path": "文件 059",
+            "tokens": 95
+          },
+          {
+            "path": "文件 060",
+            "tokens": 99
+          },
+          {
+            "path": "文件 062",
+            "tokens": 164
+          }
+        ],
+        "after_files": [
+          {
+            "path": "文件 051",
+            "tokens": 272
+          },
+          {
+            "path": "文件 054",
+            "tokens": 50
+          },
+          {
+            "path": "文件 056",
+            "tokens": 561
+          },
+          {
+            "path": "文件 058",
+            "tokens": 40
+          },
+          {
+            "path": "文件 059",
+            "tokens": 53
+          },
+          {
+            "path": "文件 060",
+            "tokens": 56
+          },
+          {
+            "path": "文件 062",
+            "tokens": 88
+          }
+        ]
+      }
+    },
+    {
+      "id": "pandas",
+      "parent": null,
+      "name": "Pandas 进度集成",
+      "kind": "capability",
+      "selection_reason": "selected_dependency",
+      "loc": {
+        "before": 1556,
+        "after": 655,
+        "reduction_percent": 57.905,
+        "method": "mapped_file_union",
+        "shared": true,
+        "before_files": [
+          {
+            "path": "文件 061",
+            "lines": 24
+          },
+          {
+            "path": "文件 083",
+            "lines": 1532
+          }
+        ],
+        "after_files": [
+          {
+            "path": "文件 056",
+            "lines": 56
+          },
+          {
+            "path": "文件 061",
+            "lines": 1
+          },
+          {
+            "path": "文件 083",
+            "lines": 598
+          }
+        ],
+        "mapping_status": "mapped"
+      },
+      "validation": {
+        "status": "verified",
+        "executed": true,
+        "baseline_status": "passed",
+        "candidate_status": "passed",
+        "checks": [
+          {
+            "name": "original_pandas",
+            "status": "passed",
+            "role": "original",
+            "scope": "retained",
+            "capabilities": [
+              "pandas"
+            ],
+            "baseline_status": "passed",
+            "candidate_status": "passed",
+            "target_capabilities": [
+              "pandas"
+            ],
+            "attribution": "knockout_confirmed",
+            "facts_given": 15,
+            "baseline_cases": {
+              "passed": 8,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 8
+            },
+            "candidate_cases": {
+              "passed": 8,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 8
+            }
+          }
+        ],
+        "coverage": "direct_checks",
+        "scope": "capability_only",
+        "independently_tested": false,
+        "obligations": [
+          {
+            "status": "verified",
+            "check": "original_pandas",
+            "kind": "declared_check"
+          }
+        ],
+        "related_checks": [],
+        "context": {
+          "status": "verified",
+          "executed": true,
+          "baseline_status": "passed",
+          "candidate_status": "passed",
+          "checks": [
+            {
+              "name": "original_pandas",
+              "status": "passed",
+              "role": "original",
+              "scope": "retained",
+              "capabilities": [
+                "pandas"
+              ],
+              "baseline_status": "passed",
+              "candidate_status": "passed",
+              "target_capabilities": [
+                "pandas"
+              ],
+              "attribution": "knockout_confirmed",
+              "facts_given": 15,
+              "baseline_cases": {
+                "passed": 8,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 8
+              },
+              "candidate_cases": {
+                "passed": 8,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 8
+              }
+            }
+          ],
+          "coverage": "mapped_checks",
+          "scope": "capability_and_descendants",
+          "independently_tested": false,
+          "blockers": [],
+          "obligations": [
+            {
+              "status": "verified",
+              "check": "original_pandas",
+              "kind": "declared_check"
+            }
+          ],
+          "evidence_href": "evidence.json"
+        },
+        "evidence_href": "evidence.json",
+        "evidence": {
+          "category": "direct_passed",
+          "direct": {
+            "total": 1,
+            "passed": 1,
+            "failed": 0,
+            "inconclusive": 0
+          },
+          "related": {
+            "total": 0,
+            "passed": 0,
+            "failed": 0,
+            "inconclusive": 0
+          },
+          "coverage": "declared_checks_only",
+          "count_unit": "check_records"
+        }
+      },
+      "tokens": {
+        "metric": "source_tokens",
+        "before": 13329,
+        "after": 5945,
+        "reduction_percent": 55.398,
+        "mapping_status": "mapped",
+        "scope": "Mapped source only; configuration tokens are measured globally, not allocated to modules.",
+        "before_files": [
+          {
+            "path": "文件 061",
+            "tokens": 250
+          },
+          {
+            "path": "文件 083",
+            "tokens": 13079
+          }
+        ],
+        "after_files": [
+          {
+            "path": "文件 056",
+            "tokens": 561
+          },
+          {
+            "path": "文件 061",
+            "tokens": 9
+          },
+          {
+            "path": "文件 083",
+            "tokens": 5375
+          }
+        ]
+      }
+    },
+    {
+      "id": "async",
+      "parent": null,
+      "name": "异步迭代",
+      "kind": "capability",
+      "selection_reason": "selected_dependency",
+      "loc": {
+        "before": 103,
+        "after": 67,
+        "reduction_percent": 34.951,
+        "method": "mapped_file_union",
+        "shared": true,
+        "before_files": [
+          {
+            "path": "文件 063",
+            "lines": 103
+          }
+        ],
+        "after_files": [
+          {
+            "path": "文件 063",
+            "lines": 67
+          }
+        ],
+        "mapping_status": "mapped"
+      },
+      "validation": {
+        "status": "verified",
+        "executed": true,
+        "baseline_status": "passed",
+        "candidate_status": "passed",
+        "checks": [
+          {
+            "name": "original_asyncio",
+            "status": "passed",
+            "role": "original",
+            "scope": "retained",
+            "capabilities": [
+              "async"
+            ],
+            "baseline_status": "passed",
+            "candidate_status": "passed",
+            "target_capabilities": [
+              "async"
+            ],
+            "attribution": "knockout_confirmed",
+            "facts_given": 9,
+            "baseline_cases": {
+              "passed": 9,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 9
+            },
+            "candidate_cases": {
+              "passed": 9,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 9
+            }
+          }
+        ],
+        "coverage": "direct_checks",
+        "scope": "capability_only",
+        "independently_tested": false,
+        "obligations": [
+          {
+            "status": "verified",
+            "check": "original_asyncio",
+            "kind": "declared_check"
+          }
+        ],
+        "related_checks": [],
+        "context": {
+          "status": "verified",
+          "executed": true,
+          "baseline_status": "passed",
+          "candidate_status": "passed",
+          "checks": [
+            {
+              "name": "original_asyncio",
+              "status": "passed",
+              "role": "original",
+              "scope": "retained",
+              "capabilities": [
+                "async"
+              ],
+              "baseline_status": "passed",
+              "candidate_status": "passed",
+              "target_capabilities": [
+                "async"
+              ],
+              "attribution": "knockout_confirmed",
+              "facts_given": 9,
+              "baseline_cases": {
+                "passed": 9,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 9
+              },
+              "candidate_cases": {
+                "passed": 9,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 9
+              }
+            }
+          ],
+          "coverage": "mapped_checks",
+          "scope": "capability_and_descendants",
+          "independently_tested": false,
+          "blockers": [],
+          "obligations": [
+            {
+              "status": "verified",
+              "check": "original_asyncio",
+              "kind": "declared_check"
+            }
+          ],
+          "evidence_href": "evidence.json"
+        },
+        "evidence_href": "evidence.json",
+        "evidence": {
+          "category": "direct_passed",
+          "direct": {
+            "total": 1,
+            "passed": 1,
+            "failed": 0,
+            "inconclusive": 0
+          },
+          "related": {
+            "total": 0,
+            "passed": 0,
+            "failed": 0,
+            "inconclusive": 0
+          },
+          "coverage": "declared_checks_only",
+          "count_unit": "check_records"
+        }
+      },
+      "tokens": {
+        "metric": "source_tokens",
+        "before": 741,
+        "after": 512,
+        "reduction_percent": 30.904,
+        "mapping_status": "mapped",
+        "scope": "Mapped source only; configuration tokens are measured globally, not allocated to modules.",
+        "before_files": [
+          {
+            "path": "文件 063",
+            "tokens": 741
+          }
+        ],
+        "after_files": [
+          {
+            "path": "文件 063",
+            "tokens": 512
+          }
+        ]
+      }
+    },
+    {
+      "id": "notebook",
+      "parent": null,
+      "name": "Notebook 小组件",
+      "kind": "capability",
+      "selection_reason": "selected_dependency",
+      "loc": {
+        "before": 317,
+        "after": 137,
+        "reduction_percent": 56.782,
+        "method": "mapped_file_union",
+        "shared": true,
+        "before_files": [
+          {
+            "path": "文件 081",
+            "lines": 317
+          }
+        ],
+        "after_files": [
+          {
+            "path": "文件 081",
+            "lines": 137
+          }
+        ],
+        "mapping_status": "mapped"
+      },
+      "validation": {
+        "status": "verified",
+        "executed": true,
+        "baseline_status": "passed",
+        "candidate_status": "passed",
+        "checks": [
+          {
+            "name": "original_notebook",
+            "status": "passed",
+            "role": "original",
+            "scope": "retained",
+            "capabilities": [
+              "notebook",
+              "auto"
+            ],
+            "baseline_status": "passed",
+            "candidate_status": "passed",
+            "target_capabilities": [
+              "notebook"
+            ],
+            "attribution": "knockout_confirmed",
+            "facts_given": 1,
+            "baseline_cases": {
+              "passed": 1,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 1
+            },
+            "candidate_cases": {
+              "passed": 1,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 1
+            }
+          }
+        ],
+        "coverage": "direct_checks",
+        "scope": "capability_only",
+        "independently_tested": false,
+        "obligations": [
+          {
+            "status": "verified",
+            "check": "original_notebook",
+            "kind": "declared_check"
+          }
+        ],
+        "related_checks": [],
+        "context": {
+          "status": "verified",
+          "executed": true,
+          "baseline_status": "passed",
+          "candidate_status": "passed",
+          "checks": [
+            {
+              "name": "original_notebook",
+              "status": "passed",
+              "role": "original",
+              "scope": "retained",
+              "capabilities": [
+                "notebook",
+                "auto"
+              ],
+              "baseline_status": "passed",
+              "candidate_status": "passed",
+              "target_capabilities": [
+                "notebook"
+              ],
+              "attribution": "knockout_confirmed",
+              "facts_given": 1,
+              "baseline_cases": {
+                "passed": 1,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 1
+              },
+              "candidate_cases": {
+                "passed": 1,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 1
+              }
+            }
+          ],
+          "coverage": "mapped_checks",
+          "scope": "capability_and_descendants",
+          "independently_tested": false,
+          "blockers": [],
+          "obligations": [
+            {
+              "status": "verified",
+              "check": "original_notebook",
+              "kind": "declared_check"
+            }
+          ],
+          "evidence_href": "evidence.json"
+        },
+        "evidence_href": "evidence.json",
+        "evidence": {
+          "category": "direct_passed",
+          "direct": {
+            "total": 1,
+            "passed": 1,
+            "failed": 0,
+            "inconclusive": 0
+          },
+          "related": {
+            "total": 0,
+            "passed": 0,
+            "failed": 0,
+            "inconclusive": 0
+          },
+          "coverage": "declared_checks_only",
+          "count_unit": "check_records"
+        }
+      },
+      "tokens": {
+        "metric": "source_tokens",
+        "before": 2507,
+        "after": 1067,
+        "reduction_percent": 57.439,
+        "mapping_status": "mapped",
+        "scope": "Mapped source only; configuration tokens are measured globally, not allocated to modules.",
+        "before_files": [
+          {
+            "path": "文件 081",
+            "tokens": 2507
+          }
+        ],
+        "after_files": [
+          {
+            "path": "文件 081",
+            "tokens": 1067
+          }
+        ]
+      }
+    },
+    {
+      "id": "auto",
+      "parent": null,
+      "name": "自动选择显示后端",
+      "kind": "capability",
+      "selection_reason": "selected_dependency",
+      "loc": {
+        "before": 78,
+        "after": 36,
+        "reduction_percent": 53.846,
+        "method": "mapped_file_union",
+        "shared": true,
+        "before_files": [
+          {
+            "path": "文件 064",
+            "lines": 40
+          },
+          {
+            "path": "文件 065",
+            "lines": 38
+          }
+        ],
+        "after_files": [
+          {
+            "path": "文件 064",
+            "lines": 18
+          },
+          {
+            "path": "文件 065",
+            "lines": 18
+          }
+        ],
+        "mapping_status": "mapped"
+      },
+      "validation": {
+        "status": "verified",
+        "executed": true,
+        "baseline_status": "passed",
+        "candidate_status": "passed",
+        "checks": [
+          {
+            "name": "contract-auto-9c387b-1",
+            "status": "passed",
+            "role": "contract",
+            "scope": "retained",
+            "capabilities": [
+              "auto"
+            ],
+            "baseline_status": "passed",
+            "candidate_status": "passed",
+            "target_capabilities": [
+              "auto"
+            ],
+            "attribution": "knockout_confirmed",
+            "facts_given": 11,
+            "baseline_cases": {
+              "passed": 27,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 27
+            },
+            "candidate_cases": {
+              "passed": 27,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 27
+            }
+          }
+        ],
+        "coverage": "direct_checks",
+        "scope": "capability_only",
+        "independently_tested": false,
+        "obligations": [
+          {
+            "status": "verified",
+            "check": "contract-auto-9c387b-1",
+            "kind": "declared_check"
+          }
+        ],
+        "related_checks": [
+          {
+            "name": "original_notebook",
+            "status": "passed",
+            "role": "original",
+            "scope": "retained",
+            "capabilities": [
+              "notebook",
+              "auto"
+            ],
+            "baseline_status": "passed",
+            "candidate_status": "passed",
+            "target_capabilities": [
+              "notebook"
+            ],
+            "attribution": "knockout_confirmed",
+            "facts_given": 1,
+            "baseline_cases": {
+              "passed": 1,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 1
+            },
+            "candidate_cases": {
+              "passed": 1,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 1
+            }
+          }
+        ],
+        "context": {
+          "status": "verified",
+          "executed": true,
+          "baseline_status": "passed",
+          "candidate_status": "passed",
+          "checks": [
+            {
+              "name": "contract-auto-9c387b-1",
+              "status": "passed",
+              "role": "contract",
+              "scope": "retained",
+              "capabilities": [
+                "auto"
+              ],
+              "baseline_status": "passed",
+              "candidate_status": "passed",
+              "target_capabilities": [
+                "auto"
+              ],
+              "attribution": "knockout_confirmed",
+              "facts_given": 11,
+              "baseline_cases": {
+                "passed": 27,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 27
+              },
+              "candidate_cases": {
+                "passed": 27,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 27
+              }
+            },
+            {
+              "name": "original_notebook",
+              "status": "passed",
+              "role": "original",
+              "scope": "retained",
+              "capabilities": [
+                "notebook",
+                "auto"
+              ],
+              "baseline_status": "passed",
+              "candidate_status": "passed",
+              "target_capabilities": [
+                "notebook"
+              ],
+              "attribution": "knockout_confirmed",
+              "facts_given": 1,
+              "baseline_cases": {
+                "passed": 1,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 1
+              },
+              "candidate_cases": {
+                "passed": 1,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 1
+              }
+            }
+          ],
+          "coverage": "mapped_checks",
+          "scope": "capability_and_descendants",
+          "independently_tested": false,
+          "blockers": [],
+          "obligations": [
+            {
+              "status": "verified",
+              "check": "original_notebook",
+              "kind": "declared_check"
+            },
+            {
+              "status": "verified",
+              "check": "contract-auto-9c387b-1",
+              "kind": "declared_check"
+            }
+          ],
+          "evidence_href": "evidence.json"
+        },
+        "evidence_href": "evidence.json",
+        "evidence": {
+          "category": "direct_passed",
+          "direct": {
+            "total": 1,
+            "passed": 1,
+            "failed": 0,
+            "inconclusive": 0
+          },
+          "related": {
+            "total": 1,
+            "passed": 1,
+            "failed": 0,
+            "inconclusive": 0
+          },
+          "coverage": "declared_checks_only",
+          "count_unit": "check_records"
+        }
+      },
+      "tokens": {
+        "metric": "source_tokens",
+        "before": 652,
+        "after": 331,
+        "reduction_percent": 49.233,
+        "mapping_status": "mapped",
+        "scope": "Mapped source only; configuration tokens are measured globally, not allocated to modules.",
+        "before_files": [
+          {
+            "path": "文件 064",
+            "tokens": 243
+          },
+          {
+            "path": "文件 065",
+            "tokens": 409
+          }
+        ],
+        "after_files": [
+          {
+            "path": "文件 064",
+            "tokens": 126
+          },
+          {
+            "path": "文件 065",
+            "tokens": 205
+          }
+        ]
+      }
+    },
+    {
+      "id": "gui",
+      "parent": null,
+      "name": "Matplotlib 图形进度",
+      "kind": "capability",
+      "selection_reason": "selected_dependency",
+      "loc": {
+        "before": 179,
+        "after": 104,
+        "reduction_percent": 41.899,
+        "method": "mapped_file_union",
+        "shared": true,
+        "before_files": [
+          {
+            "path": "文件 079",
+            "lines": 179
+          }
+        ],
+        "after_files": [
+          {
+            "path": "文件 079",
+            "lines": 104
+          }
+        ],
+        "mapping_status": "mapped"
+      },
+      "validation": {
+        "status": "verified",
+        "executed": true,
+        "baseline_status": "passed",
+        "candidate_status": "passed",
+        "checks": [
+          {
+            "name": "contract-gui-9c387b-15",
+            "status": "passed",
+            "role": "contract",
+            "scope": "retained",
+            "capabilities": [
+              "gui"
+            ],
+            "baseline_status": "passed",
+            "candidate_status": "passed",
+            "target_capabilities": [
+              "gui"
+            ],
+            "attribution": "knockout_confirmed",
+            "facts_given": 12,
+            "baseline_cases": {
+              "passed": 7,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 7
+            },
+            "candidate_cases": {
+              "passed": 7,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 7
+            }
+          },
+          {
+            "name": "contract-gui-9c387b-16",
+            "status": "passed",
+            "role": "contract",
+            "scope": "retained",
+            "capabilities": [
+              "gui"
+            ],
+            "baseline_status": "passed",
+            "candidate_status": "passed",
+            "target_capabilities": [
+              "gui"
+            ],
+            "attribution": "knockout_confirmed",
+            "facts_given": 11,
+            "baseline_cases": {
+              "passed": 38,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 38
+            },
+            "candidate_cases": {
+              "passed": 38,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 38
+            }
+          }
+        ],
+        "coverage": "direct_checks",
+        "scope": "capability_only",
+        "independently_tested": false,
+        "obligations": [
+          {
+            "status": "verified",
+            "check": "contract-gui-9c387b-15",
+            "kind": "declared_check"
+          },
+          {
+            "status": "verified",
+            "check": "contract-gui-9c387b-16",
+            "kind": "declared_check"
+          }
+        ],
+        "related_checks": [
+          {
+            "name": "original_gui",
+            "status": "passed",
+            "role": "original",
+            "scope": "retained",
+            "capabilities": [
+              "gui"
+            ],
+            "baseline_status": "passed",
+            "candidate_status": "passed",
+            "target_capabilities": [],
+            "attribution": "unattributed",
+            "baseline_cases": {
+              "passed": 1,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 1
+            },
+            "candidate_cases": {
+              "passed": 1,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 1
+            }
+          }
+        ],
+        "context": {
+          "status": "verified",
+          "executed": true,
+          "baseline_status": "passed",
+          "candidate_status": "passed",
+          "checks": [
+            {
+              "name": "contract-gui-9c387b-15",
+              "status": "passed",
+              "role": "contract",
+              "scope": "retained",
+              "capabilities": [
+                "gui"
+              ],
+              "baseline_status": "passed",
+              "candidate_status": "passed",
+              "target_capabilities": [
+                "gui"
+              ],
+              "attribution": "knockout_confirmed",
+              "facts_given": 12,
+              "baseline_cases": {
+                "passed": 7,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 7
+              },
+              "candidate_cases": {
+                "passed": 7,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 7
+              }
+            },
+            {
+              "name": "contract-gui-9c387b-16",
+              "status": "passed",
+              "role": "contract",
+              "scope": "retained",
+              "capabilities": [
+                "gui"
+              ],
+              "baseline_status": "passed",
+              "candidate_status": "passed",
+              "target_capabilities": [
+                "gui"
+              ],
+              "attribution": "knockout_confirmed",
+              "facts_given": 11,
+              "baseline_cases": {
+                "passed": 38,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 38
+              },
+              "candidate_cases": {
+                "passed": 38,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 38
+              }
+            },
+            {
+              "name": "original_gui",
+              "status": "passed",
+              "role": "original",
+              "scope": "retained",
+              "capabilities": [
+                "gui"
+              ],
+              "baseline_status": "passed",
+              "candidate_status": "passed",
+              "target_capabilities": [],
+              "attribution": "unattributed",
+              "baseline_cases": {
+                "passed": 1,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 1
+              },
+              "candidate_cases": {
+                "passed": 1,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 1
+              }
+            }
+          ],
+          "coverage": "mapped_checks",
+          "scope": "capability_and_descendants",
+          "independently_tested": false,
+          "blockers": [],
+          "obligations": [
+            {
+              "status": "verified",
+              "check": "original_gui",
+              "kind": "declared_check"
+            },
+            {
+              "status": "verified",
+              "check": "contract-gui-9c387b-15",
+              "kind": "declared_check"
+            },
+            {
+              "status": "verified",
+              "check": "contract-gui-9c387b-16",
+              "kind": "declared_check"
+            }
+          ],
+          "evidence_href": "evidence.json"
+        },
+        "evidence_href": "evidence.json",
+        "evidence": {
+          "category": "direct_passed",
+          "direct": {
+            "total": 2,
+            "passed": 2,
+            "failed": 0,
+            "inconclusive": 0
+          },
+          "related": {
+            "total": 1,
+            "passed": 1,
+            "failed": 0,
+            "inconclusive": 0
+          },
+          "coverage": "declared_checks_only",
+          "count_unit": "check_records"
+        }
+      },
+      "tokens": {
+        "metric": "source_tokens",
+        "before": 1412,
+        "after": 996,
+        "reduction_percent": 29.462,
+        "mapping_status": "mapped",
+        "scope": "Mapped source only; configuration tokens are measured globally, not allocated to modules.",
+        "before_files": [
+          {
+            "path": "文件 079",
+            "tokens": 1412
+          }
+        ],
+        "after_files": [
+          {
+            "path": "文件 079",
+            "tokens": 996
+          }
+        ]
+      }
+    },
+    {
+      "id": "tk",
+      "parent": null,
+      "name": "Tk 桌面进度",
+      "kind": "capability",
+      "selection_reason": "selected",
+      "loc": {
+        "before": 196,
+        "after": 683,
+        "reduction_percent": -248.469,
+        "method": "mapped_file_union",
+        "shared": true,
+        "before_files": [
+          {
+            "path": "文件 084",
+            "lines": 196
+          }
+        ],
+        "after_files": [
+          {
+            "path": "文件 083",
+            "lines": 598
+          },
+          {
+            "path": "文件 084",
+            "lines": 85
+          }
+        ],
+        "mapping_status": "mapped"
+      },
+      "validation": {
+        "status": "verified",
+        "executed": true,
+        "baseline_status": "passed",
+        "candidate_status": "passed",
+        "checks": [
+          {
+            "name": "contract-tk-9c387b-23",
+            "status": "passed",
+            "role": "contract",
+            "scope": "retained",
+            "capabilities": [
+              "tk"
+            ],
+            "baseline_status": "passed",
+            "candidate_status": "passed",
+            "target_capabilities": [
+              "tk"
+            ],
+            "attribution": "knockout_confirmed",
+            "facts_given": 8,
+            "baseline_cases": {
+              "passed": 7,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 7
+            },
+            "candidate_cases": {
+              "passed": 7,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 7
+            }
+          },
+          {
+            "name": "contract-tk-9c387b-24",
+            "status": "passed",
+            "role": "contract",
+            "scope": "retained",
+            "capabilities": [
+              "tk"
+            ],
+            "baseline_status": "passed",
+            "candidate_status": "passed",
+            "target_capabilities": [
+              "tk"
+            ],
+            "attribution": "knockout_confirmed",
+            "facts_given": 8,
+            "baseline_cases": {
+              "passed": 28,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 28
+            },
+            "candidate_cases": {
+              "passed": 28,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 28
+            }
+          }
+        ],
+        "coverage": "direct_checks",
+        "scope": "capability_only",
+        "independently_tested": false,
+        "obligations": [
+          {
+            "status": "verified",
+            "check": "contract-tk-9c387b-23",
+            "kind": "declared_check"
+          },
+          {
+            "status": "verified",
+            "check": "contract-tk-9c387b-24",
+            "kind": "declared_check"
+          }
+        ],
+        "related_checks": [
+          {
+            "name": "original_tk",
+            "status": "passed",
+            "role": "original",
+            "scope": "retained",
+            "capabilities": [
+              "tk"
+            ],
+            "baseline_status": "passed",
+            "candidate_status": "passed",
+            "target_capabilities": [],
+            "attribution": "unattributed",
+            "facts_given": 1,
+            "baseline_cases": {
+              "passed": 1,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 1
+            },
+            "candidate_cases": {
+              "passed": 1,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 1
+            }
+          }
+        ],
+        "context": {
+          "status": "verified",
+          "executed": true,
+          "baseline_status": "passed",
+          "candidate_status": "passed",
+          "checks": [
+            {
+              "name": "contract-tk-9c387b-23",
+              "status": "passed",
+              "role": "contract",
+              "scope": "retained",
+              "capabilities": [
+                "tk"
+              ],
+              "baseline_status": "passed",
+              "candidate_status": "passed",
+              "target_capabilities": [
+                "tk"
+              ],
+              "attribution": "knockout_confirmed",
+              "facts_given": 8,
+              "baseline_cases": {
+                "passed": 7,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 7
+              },
+              "candidate_cases": {
+                "passed": 7,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 7
+              }
+            },
+            {
+              "name": "contract-tk-9c387b-24",
+              "status": "passed",
+              "role": "contract",
+              "scope": "retained",
+              "capabilities": [
+                "tk"
+              ],
+              "baseline_status": "passed",
+              "candidate_status": "passed",
+              "target_capabilities": [
+                "tk"
+              ],
+              "attribution": "knockout_confirmed",
+              "facts_given": 8,
+              "baseline_cases": {
+                "passed": 28,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 28
+              },
+              "candidate_cases": {
+                "passed": 28,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 28
+              }
+            },
+            {
+              "name": "original_tk",
+              "status": "passed",
+              "role": "original",
+              "scope": "retained",
+              "capabilities": [
+                "tk"
+              ],
+              "baseline_status": "passed",
+              "candidate_status": "passed",
+              "target_capabilities": [],
+              "attribution": "unattributed",
+              "facts_given": 1,
+              "baseline_cases": {
+                "passed": 1,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 1
+              },
+              "candidate_cases": {
+                "passed": 1,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 1
+              }
+            }
+          ],
+          "coverage": "mapped_checks",
+          "scope": "capability_and_descendants",
+          "independently_tested": false,
+          "blockers": [],
+          "obligations": [
+            {
+              "status": "verified",
+              "check": "original_tk",
+              "kind": "declared_check"
+            },
+            {
+              "status": "verified",
+              "check": "contract-tk-9c387b-23",
+              "kind": "declared_check"
+            },
+            {
+              "status": "verified",
+              "check": "contract-tk-9c387b-24",
+              "kind": "declared_check"
+            }
+          ],
+          "evidence_href": "evidence.json"
+        },
+        "evidence_href": "evidence.json",
+        "evidence": {
+          "category": "direct_passed",
+          "direct": {
+            "total": 2,
+            "passed": 2,
+            "failed": 0,
+            "inconclusive": 0
+          },
+          "related": {
+            "total": 1,
+            "passed": 1,
+            "failed": 0,
+            "inconclusive": 0
+          },
+          "coverage": "declared_checks_only",
+          "count_unit": "check_records"
+        }
+      },
+      "tokens": {
+        "metric": "source_tokens",
+        "before": 1545,
+        "after": 6063,
+        "reduction_percent": -292.427,
+        "mapping_status": "mapped",
+        "scope": "Mapped source only; configuration tokens are measured globally, not allocated to modules.",
+        "before_files": [
+          {
+            "path": "文件 084",
+            "tokens": 1545
+          }
+        ],
+        "after_files": [
+          {
+            "path": "文件 083",
+            "tokens": 5375
+          },
+          {
+            "path": "文件 084",
+            "tokens": 688
+          }
+        ]
+      }
+    },
+    {
+      "id": "rich",
+      "parent": null,
+      "name": "Rich 显示",
+      "kind": "capability",
+      "selection_reason": "selected",
+      "loc": {
+        "before": 154,
+        "after": 68,
+        "reduction_percent": 55.844,
+        "method": "mapped_file_union",
+        "shared": true,
+        "before_files": [
+          {
+            "path": "文件 082",
+            "lines": 154
+          }
+        ],
+        "after_files": [
+          {
+            "path": "文件 082",
+            "lines": 68
+          }
+        ],
+        "mapping_status": "mapped"
+      },
+      "validation": {
+        "status": "verified",
+        "executed": true,
+        "baseline_status": "passed",
+        "candidate_status": "passed",
+        "checks": [
+          {
+            "name": "original_rich",
+            "status": "passed",
+            "role": "original",
+            "scope": "retained",
+            "capabilities": [
+              "rich"
+            ],
+            "baseline_status": "passed",
+            "candidate_status": "passed",
+            "target_capabilities": [
+              "rich"
+            ],
+            "attribution": "knockout_confirmed",
+            "facts_given": 2,
+            "baseline_cases": {
+              "passed": 2,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 2
+            },
+            "candidate_cases": {
+              "passed": 2,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 2
+            }
+          }
+        ],
+        "coverage": "direct_checks",
+        "scope": "capability_only",
+        "independently_tested": false,
+        "obligations": [
+          {
+            "status": "verified",
+            "check": "original_rich",
+            "kind": "declared_check"
+          }
+        ],
+        "related_checks": [],
+        "context": {
+          "status": "verified",
+          "executed": true,
+          "baseline_status": "passed",
+          "candidate_status": "passed",
+          "checks": [
+            {
+              "name": "original_rich",
+              "status": "passed",
+              "role": "original",
+              "scope": "retained",
+              "capabilities": [
+                "rich"
+              ],
+              "baseline_status": "passed",
+              "candidate_status": "passed",
+              "target_capabilities": [
+                "rich"
+              ],
+              "attribution": "knockout_confirmed",
+              "facts_given": 2,
+              "baseline_cases": {
+                "passed": 2,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 2
+              },
+              "candidate_cases": {
+                "passed": 2,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 2
+              }
+            }
+          ],
+          "coverage": "mapped_checks",
+          "scope": "capability_and_descendants",
+          "independently_tested": false,
+          "blockers": [],
+          "obligations": [
+            {
+              "status": "verified",
+              "check": "original_rich",
+              "kind": "declared_check"
+            }
+          ],
+          "evidence_href": "evidence.json"
+        },
+        "evidence_href": "evidence.json",
+        "evidence": {
+          "category": "direct_passed",
+          "direct": {
+            "total": 1,
+            "passed": 1,
+            "failed": 0,
+            "inconclusive": 0
+          },
+          "related": {
+            "total": 0,
+            "passed": 0,
+            "failed": 0,
+            "inconclusive": 0
+          },
+          "coverage": "declared_checks_only",
+          "count_unit": "check_records"
+        }
+      },
+      "tokens": {
+        "metric": "source_tokens",
+        "before": 1237,
+        "after": 525,
+        "reduction_percent": 57.559,
+        "mapping_status": "mapped",
+        "scope": "Mapped source only; configuration tokens are measured globally, not allocated to modules.",
+        "before_files": [
+          {
+            "path": "文件 082",
+            "tokens": 1237
+          }
+        ],
+        "after_files": [
+          {
+            "path": "文件 082",
+            "tokens": 525
+          }
+        ]
+      }
+    },
+    {
+      "id": "iterables",
+      "parent": null,
+      "name": "可迭代辅助函数",
+      "kind": "capability",
+      "selection_reason": "selected",
+      "loc": {
+        "before": 183,
+        "after": 102,
+        "reduction_percent": 44.262,
+        "method": "mapped_file_union",
+        "shared": true,
+        "before_files": [
+          {
+            "path": "文件 068",
+            "lines": 91
+          },
+          {
+            "path": "文件 073",
+            "lines": 92
+          }
+        ],
+        "after_files": [
+          {
+            "path": "文件 068",
+            "lines": 37
+          },
+          {
+            "path": "文件 073",
+            "lines": 65
+          }
+        ],
+        "mapping_status": "mapped"
+      },
+      "validation": {
+        "status": "verified",
+        "executed": true,
+        "baseline_status": "passed",
+        "candidate_status": "passed",
+        "checks": [
+          {
+            "name": "original_contrib",
+            "status": "passed",
+            "role": "original",
+            "scope": "retained",
+            "capabilities": [
+              "iterables"
+            ],
+            "baseline_status": "passed",
+            "candidate_status": "passed",
+            "target_capabilities": [
+              "iterables"
+            ],
+            "attribution": "knockout_confirmed",
+            "facts_given": 5,
+            "baseline_cases": {
+              "passed": 7,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 7
+            },
+            "candidate_cases": {
+              "passed": 7,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 7
+            }
+          },
+          {
+            "name": "original_itertools",
+            "status": "passed",
+            "role": "original",
+            "scope": "retained",
+            "capabilities": [
+              "iterables"
+            ],
+            "baseline_status": "passed",
+            "candidate_status": "passed",
+            "target_capabilities": [
+              "iterables"
+            ],
+            "attribution": "knockout_confirmed",
+            "facts_given": 9,
+            "baseline_cases": {
+              "passed": 5,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 1,
+              "executed": 5
+            },
+            "candidate_cases": {
+              "passed": 5,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 1,
+              "executed": 5
+            }
+          }
+        ],
+        "coverage": "direct_checks",
+        "scope": "capability_only",
+        "independently_tested": false,
+        "obligations": [
+          {
+            "status": "verified",
+            "check": "original_contrib",
+            "kind": "declared_check"
+          },
+          {
+            "status": "verified",
+            "check": "original_itertools",
+            "kind": "declared_check"
+          }
+        ],
+        "related_checks": [],
+        "context": {
+          "status": "verified",
+          "executed": true,
+          "baseline_status": "passed",
+          "candidate_status": "passed",
+          "checks": [
+            {
+              "name": "original_contrib",
+              "status": "passed",
+              "role": "original",
+              "scope": "retained",
+              "capabilities": [
+                "iterables"
+              ],
+              "baseline_status": "passed",
+              "candidate_status": "passed",
+              "target_capabilities": [
+                "iterables"
+              ],
+              "attribution": "knockout_confirmed",
+              "facts_given": 5,
+              "baseline_cases": {
+                "passed": 7,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 7
+              },
+              "candidate_cases": {
+                "passed": 7,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 7
+              }
+            },
+            {
+              "name": "original_itertools",
+              "status": "passed",
+              "role": "original",
+              "scope": "retained",
+              "capabilities": [
+                "iterables"
+              ],
+              "baseline_status": "passed",
+              "candidate_status": "passed",
+              "target_capabilities": [
+                "iterables"
+              ],
+              "attribution": "knockout_confirmed",
+              "facts_given": 9,
+              "baseline_cases": {
+                "passed": 5,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 1,
+                "executed": 5
+              },
+              "candidate_cases": {
+                "passed": 5,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 1,
+                "executed": 5
+              }
+            }
+          ],
+          "coverage": "mapped_checks",
+          "scope": "capability_and_descendants",
+          "independently_tested": false,
+          "blockers": [],
+          "obligations": [
+            {
+              "status": "verified",
+              "check": "original_contrib",
+              "kind": "declared_check"
+            },
+            {
+              "status": "verified",
+              "check": "original_itertools",
+              "kind": "declared_check"
+            }
+          ],
+          "evidence_href": "evidence.json"
+        },
+        "evidence_href": "evidence.json",
+        "evidence": {
+          "category": "direct_passed",
+          "direct": {
+            "total": 2,
+            "passed": 2,
+            "failed": 0,
+            "inconclusive": 0
+          },
+          "related": {
+            "total": 0,
+            "passed": 0,
+            "failed": 0,
+            "inconclusive": 0
+          },
+          "coverage": "declared_checks_only",
+          "count_unit": "check_records"
+        }
+      },
+      "tokens": {
+        "metric": "source_tokens",
+        "before": 1323,
+        "after": 914,
+        "reduction_percent": 30.915,
+        "mapping_status": "mapped",
+        "scope": "Mapped source only; configuration tokens are measured globally, not allocated to modules.",
+        "before_files": [
+          {
+            "path": "文件 068",
+            "tokens": 626
+          },
+          {
+            "path": "文件 073",
+            "tokens": 697
+          }
+        ],
+        "after_files": [
+          {
+            "path": "文件 068",
+            "tokens": 327
+          },
+          {
+            "path": "文件 073",
+            "tokens": 587
+          }
+        ]
+      }
+    },
+    {
+      "id": "concurrent",
+      "parent": null,
+      "name": "线程与进程并行映射",
+      "kind": "capability",
+      "selection_reason": "selected_dependency",
+      "loc": {
+        "before": 259,
+        "after": 62,
+        "reduction_percent": 76.062,
+        "method": "mapped_file_union",
+        "shared": true,
+        "before_files": [
+          {
+            "path": "文件 071",
+            "lines": 259
+          }
+        ],
+        "after_files": [
+          {
+            "path": "文件 071",
+            "lines": 62
+          }
+        ],
+        "mapping_status": "mapped"
+      },
+      "validation": {
+        "status": "verified",
+        "executed": true,
+        "baseline_status": "passed",
+        "candidate_status": "passed",
+        "checks": [
+          {
+            "name": "contract-concurrent-9c387b-8",
+            "status": "passed",
+            "role": "contract",
+            "scope": "retained",
+            "capabilities": [
+              "concurrent"
+            ],
+            "baseline_status": "passed",
+            "candidate_status": "passed",
+            "target_capabilities": [
+              "concurrent"
+            ],
+            "attribution": "knockout_confirmed",
+            "facts_given": 7,
+            "baseline_cases": {
+              "passed": 13,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 13
+            },
+            "candidate_cases": {
+              "passed": 13,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 13
+            }
+          },
+          {
+            "name": "contract-concurrent-9c387b-9",
+            "status": "passed",
+            "role": "contract",
+            "scope": "retained",
+            "capabilities": [
+              "concurrent"
+            ],
+            "baseline_status": "passed",
+            "candidate_status": "passed",
+            "target_capabilities": [
+              "concurrent"
+            ],
+            "attribution": "knockout_confirmed",
+            "facts_given": 6,
+            "baseline_cases": {
+              "passed": 12,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 12
+            },
+            "candidate_cases": {
+              "passed": 12,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 12
+            }
+          }
+        ],
+        "coverage": "direct_checks",
+        "scope": "capability_only",
+        "independently_tested": false,
+        "obligations": [
+          {
+            "status": "verified",
+            "check": "contract-concurrent-9c387b-8",
+            "kind": "declared_check"
+          },
+          {
+            "status": "verified",
+            "check": "contract-concurrent-9c387b-9",
+            "kind": "declared_check"
+          }
+        ],
+        "related_checks": [],
+        "context": {
+          "status": "verified",
+          "executed": true,
+          "baseline_status": "passed",
+          "candidate_status": "passed",
+          "checks": [
+            {
+              "name": "contract-concurrent-9c387b-8",
+              "status": "passed",
+              "role": "contract",
+              "scope": "retained",
+              "capabilities": [
+                "concurrent"
+              ],
+              "baseline_status": "passed",
+              "candidate_status": "passed",
+              "target_capabilities": [
+                "concurrent"
+              ],
+              "attribution": "knockout_confirmed",
+              "facts_given": 7,
+              "baseline_cases": {
+                "passed": 13,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 13
+              },
+              "candidate_cases": {
+                "passed": 13,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 13
+              }
+            },
+            {
+              "name": "contract-concurrent-9c387b-9",
+              "status": "passed",
+              "role": "contract",
+              "scope": "retained",
+              "capabilities": [
+                "concurrent"
+              ],
+              "baseline_status": "passed",
+              "candidate_status": "passed",
+              "target_capabilities": [
+                "concurrent"
+              ],
+              "attribution": "knockout_confirmed",
+              "facts_given": 6,
+              "baseline_cases": {
+                "passed": 12,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 12
+              },
+              "candidate_cases": {
+                "passed": 12,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 12
+              }
+            }
+          ],
+          "coverage": "mapped_checks",
+          "scope": "capability_and_descendants",
+          "independently_tested": false,
+          "blockers": [],
+          "obligations": [
+            {
+              "status": "verified",
+              "check": "contract-concurrent-9c387b-8",
+              "kind": "declared_check"
+            },
+            {
+              "status": "verified",
+              "check": "contract-concurrent-9c387b-9",
+              "kind": "declared_check"
+            }
+          ],
+          "evidence_href": "evidence.json"
+        },
+        "evidence_href": "evidence.json",
+        "evidence": {
+          "category": "direct_passed",
+          "direct": {
+            "total": 2,
+            "passed": 2,
+            "failed": 0,
+            "inconclusive": 0
+          },
+          "related": {
+            "total": 0,
+            "passed": 0,
+            "failed": 0,
+            "inconclusive": 0
+          },
+          "coverage": "declared_checks_only",
+          "count_unit": "check_records"
+        }
+      },
+      "tokens": {
+        "metric": "source_tokens",
+        "before": 2396,
+        "after": 599,
+        "reduction_percent": 75.0,
+        "mapping_status": "mapped",
+        "scope": "Mapped source only; configuration tokens are measured globally, not allocated to modules.",
+        "before_files": [
+          {
+            "path": "文件 071",
+            "tokens": 2396
+          }
+        ],
+        "after_files": [
+          {
+            "path": "文件 071",
+            "tokens": 599
+          }
+        ]
+      }
+    },
+    {
+      "id": "logging",
+      "parent": null,
+      "name": "日志重定向",
+      "kind": "capability",
+      "selection_reason": "selected",
+      "loc": {
+        "before": 128,
+        "after": 649,
+        "reduction_percent": -407.031,
+        "method": "mapped_file_union",
+        "shared": true,
+        "before_files": [
+          {
+            "path": "文件 074",
+            "lines": 128
+          }
+        ],
+        "after_files": [
+          {
+            "path": "文件 074",
+            "lines": 51
+          },
+          {
+            "path": "文件 083",
+            "lines": 598
+          }
+        ],
+        "mapping_status": "mapped"
+      },
+      "validation": {
+        "status": "verified",
+        "executed": true,
+        "baseline_status": "passed",
+        "candidate_status": "passed",
+        "checks": [
+          {
+            "name": "contract-logging-9c387b-17",
+            "status": "passed",
+            "role": "contract",
+            "scope": "retained",
+            "capabilities": [
+              "logging"
+            ],
+            "baseline_status": "passed",
+            "candidate_status": "passed",
+            "target_capabilities": [
+              "logging"
+            ],
+            "attribution": "knockout_confirmed",
+            "facts_given": 8,
+            "baseline_cases": {
+              "passed": 7,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 7
+            },
+            "candidate_cases": {
+              "passed": 7,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 7
+            }
+          },
+          {
+            "name": "contract-logging-9c387b-18",
+            "status": "passed",
+            "role": "contract",
+            "scope": "retained",
+            "capabilities": [
+              "logging"
+            ],
+            "baseline_status": "passed",
+            "candidate_status": "passed",
+            "target_capabilities": [
+              "logging"
+            ],
+            "attribution": "knockout_confirmed",
+            "facts_given": 10,
+            "baseline_cases": {
+              "passed": 8,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 8
+            },
+            "candidate_cases": {
+              "passed": 8,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 8
+            }
+          },
+          {
+            "name": "contract-logging-9c387b-19",
+            "status": "passed",
+            "role": "contract",
+            "scope": "retained",
+            "capabilities": [
+              "logging"
+            ],
+            "baseline_status": "passed",
+            "candidate_status": "passed",
+            "target_capabilities": [
+              "logging"
+            ],
+            "attribution": "knockout_confirmed",
+            "facts_given": 8,
+            "baseline_cases": {
+              "passed": 7,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 7
+            },
+            "candidate_cases": {
+              "passed": 7,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 7
+            }
+          }
+        ],
+        "coverage": "direct_checks",
+        "scope": "capability_only",
+        "independently_tested": false,
+        "obligations": [
+          {
+            "status": "verified",
+            "check": "contract-logging-9c387b-17",
+            "kind": "declared_check"
+          },
+          {
+            "status": "verified",
+            "check": "contract-logging-9c387b-18",
+            "kind": "declared_check"
+          },
+          {
+            "status": "verified",
+            "check": "contract-logging-9c387b-19",
+            "kind": "declared_check"
+          }
+        ],
+        "related_checks": [],
+        "context": {
+          "status": "verified",
+          "executed": true,
+          "baseline_status": "passed",
+          "candidate_status": "passed",
+          "checks": [
+            {
+              "name": "contract-logging-9c387b-17",
+              "status": "passed",
+              "role": "contract",
+              "scope": "retained",
+              "capabilities": [
+                "logging"
+              ],
+              "baseline_status": "passed",
+              "candidate_status": "passed",
+              "target_capabilities": [
+                "logging"
+              ],
+              "attribution": "knockout_confirmed",
+              "facts_given": 8,
+              "baseline_cases": {
+                "passed": 7,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 7
+              },
+              "candidate_cases": {
+                "passed": 7,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 7
+              }
+            },
+            {
+              "name": "contract-logging-9c387b-18",
+              "status": "passed",
+              "role": "contract",
+              "scope": "retained",
+              "capabilities": [
+                "logging"
+              ],
+              "baseline_status": "passed",
+              "candidate_status": "passed",
+              "target_capabilities": [
+                "logging"
+              ],
+              "attribution": "knockout_confirmed",
+              "facts_given": 10,
+              "baseline_cases": {
+                "passed": 8,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 8
+              },
+              "candidate_cases": {
+                "passed": 8,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 8
+              }
+            },
+            {
+              "name": "contract-logging-9c387b-19",
+              "status": "passed",
+              "role": "contract",
+              "scope": "retained",
+              "capabilities": [
+                "logging"
+              ],
+              "baseline_status": "passed",
+              "candidate_status": "passed",
+              "target_capabilities": [
+                "logging"
+              ],
+              "attribution": "knockout_confirmed",
+              "facts_given": 8,
+              "baseline_cases": {
+                "passed": 7,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 7
+              },
+              "candidate_cases": {
+                "passed": 7,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 7
+              }
+            }
+          ],
+          "coverage": "mapped_checks",
+          "scope": "capability_and_descendants",
+          "independently_tested": false,
+          "blockers": [],
+          "obligations": [
+            {
+              "status": "verified",
+              "check": "contract-logging-9c387b-17",
+              "kind": "declared_check"
+            },
+            {
+              "status": "verified",
+              "check": "contract-logging-9c387b-18",
+              "kind": "declared_check"
+            },
+            {
+              "status": "verified",
+              "check": "contract-logging-9c387b-19",
+              "kind": "declared_check"
+            }
+          ],
+          "evidence_href": "evidence.json"
+        },
+        "evidence_href": "evidence.json",
+        "evidence": {
+          "category": "direct_passed",
+          "direct": {
+            "total": 3,
+            "passed": 3,
+            "failed": 0,
+            "inconclusive": 0
+          },
+          "related": {
+            "total": 0,
+            "passed": 0,
+            "failed": 0,
+            "inconclusive": 0
+          },
+          "coverage": "declared_checks_only",
+          "count_unit": "check_records"
+        }
+      },
+      "tokens": {
+        "metric": "source_tokens",
+        "before": 891,
+        "after": 5760,
+        "reduction_percent": -546.465,
+        "mapping_status": "mapped",
+        "scope": "Mapped source only; configuration tokens are measured globally, not allocated to modules.",
+        "before_files": [
+          {
+            "path": "文件 074",
+            "tokens": 891
+          }
+        ],
+        "after_files": [
+          {
+            "path": "文件 074",
+            "tokens": 385
+          },
+          {
+            "path": "文件 083",
+            "tokens": 5375
+          }
+        ]
+      }
+    },
+    {
+      "id": "notifications",
+      "parent": null,
+      "name": "消息平台进度",
+      "kind": "capability",
+      "selection_reason": "selected_dependency",
+      "loc": {
+        "before": 464,
+        "after": 214,
+        "reduction_percent": 53.879,
+        "method": "mapped_file_union",
+        "shared": true,
+        "before_files": [
+          {
+            "path": "文件 072",
+            "lines": 155
+          },
+          {
+            "path": "文件 075",
+            "lines": 119
+          },
+          {
+            "path": "文件 076",
+            "lines": 152
+          },
+          {
+            "path": "文件 077",
+            "lines": 38
+          }
+        ],
+        "after_files": [
+          {
+            "path": "文件 069",
+            "lines": 60
+          },
+          {
+            "path": "文件 072",
+            "lines": 44
+          },
+          {
+            "path": "文件 075",
+            "lines": 44
+          },
+          {
+            "path": "文件 076",
+            "lines": 46
+          },
+          {
+            "path": "文件 077",
+            "lines": 20
+          }
+        ],
+        "mapping_status": "mapped"
+      },
+      "validation": {
+        "status": "verified",
+        "executed": true,
+        "baseline_status": "passed",
+        "candidate_status": "passed",
+        "checks": [
+          {
+            "name": "contract-notifications-9c387b-21",
+            "status": "passed",
+            "role": "contract",
+            "scope": "retained",
+            "capabilities": [
+              "notifications"
+            ],
+            "baseline_status": "passed",
+            "candidate_status": "passed",
+            "target_capabilities": [
+              "notifications"
+            ],
+            "attribution": "knockout_confirmed",
+            "facts_given": 8,
+            "baseline_cases": {
+              "passed": 5,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 5
+            },
+            "candidate_cases": {
+              "passed": 5,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 5
+            }
+          },
+          {
+            "name": "contract-notifications-9c387b-22",
+            "status": "passed",
+            "role": "contract",
+            "scope": "retained",
+            "capabilities": [
+              "notifications"
+            ],
+            "baseline_status": "passed",
+            "candidate_status": "passed",
+            "target_capabilities": [
+              "notifications"
+            ],
+            "attribution": "knockout_confirmed",
+            "facts_given": 8,
+            "baseline_cases": {
+              "passed": 28,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 28
+            },
+            "candidate_cases": {
+              "passed": 28,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 28
+            }
+          }
+        ],
+        "coverage": "direct_checks",
+        "scope": "capability_only",
+        "independently_tested": false,
+        "obligations": [
+          {
+            "status": "verified",
+            "check": "contract-notifications-9c387b-21",
+            "kind": "declared_check"
+          },
+          {
+            "status": "verified",
+            "check": "contract-notifications-9c387b-22",
+            "kind": "declared_check"
+          }
+        ],
+        "related_checks": [],
+        "context": {
+          "status": "verified",
+          "executed": true,
+          "baseline_status": "passed",
+          "candidate_status": "passed",
+          "checks": [
+            {
+              "name": "contract-notifications-9c387b-21",
+              "status": "passed",
+              "role": "contract",
+              "scope": "retained",
+              "capabilities": [
+                "notifications"
+              ],
+              "baseline_status": "passed",
+              "candidate_status": "passed",
+              "target_capabilities": [
+                "notifications"
+              ],
+              "attribution": "knockout_confirmed",
+              "facts_given": 8,
+              "baseline_cases": {
+                "passed": 5,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 5
+              },
+              "candidate_cases": {
+                "passed": 5,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 5
+              }
+            },
+            {
+              "name": "contract-notifications-9c387b-22",
+              "status": "passed",
+              "role": "contract",
+              "scope": "retained",
+              "capabilities": [
+                "notifications"
+              ],
+              "baseline_status": "passed",
+              "candidate_status": "passed",
+              "target_capabilities": [
+                "notifications"
+              ],
+              "attribution": "knockout_confirmed",
+              "facts_given": 8,
+              "baseline_cases": {
+                "passed": 28,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 28
+              },
+              "candidate_cases": {
+                "passed": 28,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 28
+              }
+            }
+          ],
+          "coverage": "mapped_checks",
+          "scope": "capability_and_descendants",
+          "independently_tested": false,
+          "blockers": [],
+          "obligations": [
+            {
+              "status": "verified",
+              "check": "contract-notifications-9c387b-21",
+              "kind": "declared_check"
+            },
+            {
+              "status": "verified",
+              "check": "contract-notifications-9c387b-22",
+              "kind": "declared_check"
+            }
+          ],
+          "evidence_href": "evidence.json"
+        },
+        "evidence_href": "evidence.json",
+        "evidence": {
+          "category": "direct_passed",
+          "direct": {
+            "total": 2,
+            "passed": 2,
+            "failed": 0,
+            "inconclusive": 0
+          },
+          "related": {
+            "total": 0,
+            "passed": 0,
+            "failed": 0,
+            "inconclusive": 0
+          },
+          "coverage": "declared_checks_only",
+          "count_unit": "check_records"
+        }
+      },
+      "tokens": {
+        "metric": "source_tokens",
+        "before": 3781,
+        "after": 1583,
+        "reduction_percent": 58.133,
+        "mapping_status": "mapped",
+        "scope": "Mapped source only; configuration tokens are measured globally, not allocated to modules.",
+        "before_files": [
+          {
+            "path": "文件 072",
+            "tokens": 1277
+          },
+          {
+            "path": "文件 075",
+            "tokens": 1015
+          },
+          {
+            "path": "文件 076",
+            "tokens": 1234
+          },
+          {
+            "path": "文件 077",
+            "tokens": 255
+          }
+        ],
+        "after_files": [
+          {
+            "path": "文件 069",
+            "tokens": 393
+          },
+          {
+            "path": "文件 072",
+            "tokens": 362
+          },
+          {
+            "path": "文件 075",
+            "tokens": 307
+          },
+          {
+            "path": "文件 076",
+            "tokens": 375
+          },
+          {
+            "path": "文件 077",
+            "tokens": 146
+          }
+        ]
+      }
+    },
+    {
+      "id": "bells",
+      "parent": null,
+      "name": "集成自动启用",
+      "kind": "capability",
+      "selection_reason": "selected",
+      "loc": {
+        "before": 28,
+        "after": 18,
+        "reduction_percent": 35.714,
+        "method": "mapped_file_union",
+        "shared": true,
+        "before_files": [
+          {
+            "path": "文件 070",
+            "lines": 28
+          }
+        ],
+        "after_files": [
+          {
+            "path": "文件 070",
+            "lines": 18
+          }
+        ],
+        "mapping_status": "mapped"
+      },
+      "validation": {
+        "status": "verified",
+        "executed": true,
+        "baseline_status": "passed",
+        "candidate_status": "passed",
+        "checks": [
+          {
+            "name": "contract-bells-9c387b-2",
+            "status": "passed",
+            "role": "contract",
+            "scope": "retained",
+            "capabilities": [
+              "bells"
+            ],
+            "baseline_status": "passed",
+            "candidate_status": "passed",
+            "target_capabilities": [
+              "bells"
+            ],
+            "attribution": "single_capability",
+            "facts_given": 12,
+            "baseline_cases": {
+              "passed": 34,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 34
+            },
+            "candidate_cases": {
+              "passed": 34,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 34
+            }
+          }
+        ],
+        "coverage": "direct_checks",
+        "scope": "capability_only",
+        "independently_tested": false,
+        "obligations": [
+          {
+            "status": "verified",
+            "check": "contract-bells-9c387b-2",
+            "kind": "declared_check"
+          }
+        ],
+        "related_checks": [],
+        "context": {
+          "status": "verified",
+          "executed": true,
+          "baseline_status": "passed",
+          "candidate_status": "passed",
+          "checks": [
+            {
+              "name": "contract-bells-9c387b-2",
+              "status": "passed",
+              "role": "contract",
+              "scope": "retained",
+              "capabilities": [
+                "bells"
+              ],
+              "baseline_status": "passed",
+              "candidate_status": "passed",
+              "target_capabilities": [
+                "bells"
+              ],
+              "attribution": "single_capability",
+              "facts_given": 12,
+              "baseline_cases": {
+                "passed": 34,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 34
+              },
+              "candidate_cases": {
+                "passed": 34,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 34
+              }
+            }
+          ],
+          "coverage": "mapped_checks",
+          "scope": "capability_and_descendants",
+          "independently_tested": false,
+          "blockers": [],
+          "obligations": [
+            {
+              "status": "verified",
+              "check": "contract-bells-9c387b-2",
+              "kind": "declared_check"
+            }
+          ],
+          "evidence_href": "evidence.json"
+        },
+        "evidence_href": "evidence.json",
+        "evidence": {
+          "category": "direct_passed",
+          "direct": {
+            "total": 1,
+            "passed": 1,
+            "failed": 0,
+            "inconclusive": 0
+          },
+          "related": {
+            "total": 0,
+            "passed": 0,
+            "failed": 0,
+            "inconclusive": 0
+          },
+          "coverage": "declared_checks_only",
+          "count_unit": "check_records"
+        }
+      },
+      "tokens": {
+        "metric": "source_tokens",
+        "before": 277,
+        "after": 147,
+        "reduction_percent": 46.931,
+        "mapping_status": "mapped",
+        "scope": "Mapped source only; configuration tokens are measured globally, not allocated to modules.",
+        "before_files": [
+          {
+            "path": "文件 070",
+            "tokens": 277
+          }
+        ],
+        "after_files": [
+          {
+            "path": "文件 070",
+            "tokens": 147
+          }
+        ]
+      }
+    },
+    {
+      "id": "dask",
+      "parent": null,
+      "name": "Dask 任务回调",
+      "kind": "capability",
+      "selection_reason": "selected",
+      "loc": {
+        "before": 44,
+        "after": 29,
+        "reduction_percent": 34.091,
+        "method": "mapped_file_union",
+        "shared": true,
+        "before_files": [
+          {
+            "path": "文件 078",
+            "lines": 44
+          }
+        ],
+        "after_files": [
+          {
+            "path": "文件 078",
+            "lines": 29
+          }
+        ],
+        "mapping_status": "mapped"
+      },
+      "validation": {
+        "status": "verified",
+        "executed": true,
+        "baseline_status": "passed",
+        "candidate_status": "passed",
+        "checks": [
+          {
+            "name": "original_dask",
+            "status": "passed",
+            "role": "original",
+            "scope": "retained",
+            "capabilities": [
+              "dask"
+            ],
+            "baseline_status": "passed",
+            "candidate_status": "passed",
+            "target_capabilities": [
+              "dask"
+            ],
+            "attribution": "knockout_confirmed",
+            "facts_given": 1,
+            "baseline_cases": {
+              "passed": 1,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 1
+            },
+            "candidate_cases": {
+              "passed": 1,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 1
+            }
+          }
+        ],
+        "coverage": "direct_checks",
+        "scope": "capability_only",
+        "independently_tested": false,
+        "obligations": [
+          {
+            "status": "verified",
+            "check": "original_dask",
+            "kind": "declared_check"
+          }
+        ],
+        "related_checks": [],
+        "context": {
+          "status": "verified",
+          "executed": true,
+          "baseline_status": "passed",
+          "candidate_status": "passed",
+          "checks": [
+            {
+              "name": "original_dask",
+              "status": "passed",
+              "role": "original",
+              "scope": "retained",
+              "capabilities": [
+                "dask"
+              ],
+              "baseline_status": "passed",
+              "candidate_status": "passed",
+              "target_capabilities": [
+                "dask"
+              ],
+              "attribution": "knockout_confirmed",
+              "facts_given": 1,
+              "baseline_cases": {
+                "passed": 1,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 1
+              },
+              "candidate_cases": {
+                "passed": 1,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 1
+              }
+            }
+          ],
+          "coverage": "mapped_checks",
+          "scope": "capability_and_descendants",
+          "independently_tested": false,
+          "blockers": [],
+          "obligations": [
+            {
+              "status": "verified",
+              "check": "original_dask",
+              "kind": "declared_check"
+            }
+          ],
+          "evidence_href": "evidence.json"
+        },
+        "evidence_href": "evidence.json",
+        "evidence": {
+          "category": "direct_passed",
+          "direct": {
+            "total": 1,
+            "passed": 1,
+            "failed": 0,
+            "inconclusive": 0
+          },
+          "related": {
+            "total": 0,
+            "passed": 0,
+            "failed": 0,
+            "inconclusive": 0
+          },
+          "coverage": "declared_checks_only",
+          "count_unit": "check_records"
+        }
+      },
+      "tokens": {
+        "metric": "source_tokens",
+        "before": 319,
+        "after": 252,
+        "reduction_percent": 21.003,
+        "mapping_status": "mapped",
+        "scope": "Mapped source only; configuration tokens are measured globally, not allocated to modules.",
+        "before_files": [
+          {
+            "path": "文件 078",
+            "tokens": 319
+          }
+        ],
+        "after_files": [
+          {
+            "path": "文件 078",
+            "tokens": 252
+          }
+        ]
+      }
+    },
+    {
+      "id": "keras",
+      "parent": null,
+      "name": "Keras 训练回调",
+      "kind": "capability",
+      "selection_reason": "selected",
+      "loc": {
+        "before": 123,
+        "after": 65,
+        "reduction_percent": 47.154,
+        "method": "mapped_file_union",
+        "shared": true,
+        "before_files": [
+          {
+            "path": "文件 080",
+            "lines": 123
+          }
+        ],
+        "after_files": [
+          {
+            "path": "文件 080",
+            "lines": 65
+          }
+        ],
+        "mapping_status": "mapped"
+      },
+      "validation": {
+        "status": "unknown",
+        "executed": false,
+        "baseline_status": "not_run",
+        "candidate_status": "not_run",
+        "checks": [],
+        "coverage": "direct_checks",
+        "scope": "capability_only",
+        "independently_tested": false,
+        "obligations": [
+          {
+            "kind": "coverage",
+            "status": "unknown",
+            "reason": "no_direct_checks"
+          }
+        ],
+        "related_checks": [
+          {
+            "name": "original_keras",
+            "status": "passed",
+            "role": "original",
+            "scope": "retained",
+            "capabilities": [
+              "keras"
+            ],
+            "baseline_status": "passed",
+            "candidate_status": "passed",
+            "target_capabilities": [],
+            "attribution": "unattributed",
+            "facts_given": 5,
+            "baseline_cases": {
+              "passed": 0,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 1,
+              "executed": 0
+            },
+            "candidate_cases": {
+              "passed": 0,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 1,
+              "executed": 0
+            }
+          }
+        ],
+        "context": {
+          "status": "verified",
+          "executed": true,
+          "baseline_status": "passed",
+          "candidate_status": "passed",
+          "checks": [
+            {
+              "name": "original_keras",
+              "status": "passed",
+              "role": "original",
+              "scope": "retained",
+              "capabilities": [
+                "keras"
+              ],
+              "baseline_status": "passed",
+              "candidate_status": "passed",
+              "target_capabilities": [],
+              "attribution": "unattributed",
+              "facts_given": 5,
+              "baseline_cases": {
+                "passed": 0,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 1,
+                "executed": 0
+              },
+              "candidate_cases": {
+                "passed": 0,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 1,
+                "executed": 0
+              }
+            }
+          ],
+          "coverage": "mapped_checks",
+          "scope": "capability_and_descendants",
+          "independently_tested": false,
+          "blockers": [],
+          "obligations": [
+            {
+              "status": "verified",
+              "check": "original_keras",
+              "kind": "declared_check"
+            }
+          ],
+          "evidence_href": "evidence.json"
+        },
+        "evidence_href": "evidence.json",
+        "blockers": [
+          "No valid leaf test: no behavioral knockout failure, no passing cases"
+        ],
+        "evidence": {
+          "category": "related_passed",
+          "direct": {
+            "total": 0,
+            "passed": 0,
+            "failed": 0,
+            "inconclusive": 0
+          },
+          "related": {
+            "total": 1,
+            "passed": 1,
+            "failed": 0,
+            "inconclusive": 0
+          },
+          "coverage": "limited",
+          "count_unit": "check_records"
+        }
+      },
+      "tokens": {
+        "metric": "source_tokens",
+        "before": 991,
+        "after": 572,
+        "reduction_percent": 42.281,
+        "mapping_status": "mapped",
+        "scope": "Mapped source only; configuration tokens are measured globally, not allocated to modules.",
+        "before_files": [
+          {
+            "path": "文件 080",
+            "tokens": 991
+          }
+        ],
+        "after_files": [
+          {
+            "path": "文件 080",
+            "tokens": 572
+          }
+        ]
+      }
+    },
+    {
+      "id": "examples",
+      "parent": null,
+      "name": "示例工作流",
+      "kind": "capability",
+      "selection_reason": "selected",
+      "loc": {
+        "before": 603,
+        "after": 748,
+        "reduction_percent": -24.046,
+        "method": "mapped_file_union",
+        "shared": true,
+        "before_files": [
+          {
+            "path": "文件 016",
+            "lines": 117
+          },
+          {
+            "path": "文件 017",
+            "lines": 36
+          },
+          {
+            "path": "文件 018",
+            "lines": 69
+          },
+          {
+            "path": "文件 021",
+            "lines": 11
+          },
+          {
+            "path": "文件 023",
+            "lines": 29
+          },
+          {
+            "path": "文件 024",
+            "lines": 53
+          },
+          {
+            "path": "文件 026",
+            "lines": 50
+          },
+          {
+            "path": "文件 027",
+            "lines": 64
+          },
+          {
+            "path": "文件 028",
+            "lines": 49
+          },
+          {
+            "path": "文件 029",
+            "lines": 110
+          },
+          {
+            "path": "文件 030",
+            "lines": 15
+          }
+        ],
+        "after_files": [
+          {
+            "path": "文件 017",
+            "lines": 24
+          },
+          {
+            "path": "文件 018",
+            "lines": 25
+          },
+          {
+            "path": "文件 019",
+            "lines": 24
+          },
+          {
+            "path": "文件 020",
+            "lines": 18
+          },
+          {
+            "path": "文件 021",
+            "lines": 10
+          },
+          {
+            "path": "文件 022",
+            "lines": 11
+          },
+          {
+            "path": "文件 024",
+            "lines": 23
+          },
+          {
+            "path": "文件 025",
+            "lines": 15
+          },
+          {
+            "path": "文件 083",
+            "lines": 598
+          }
+        ],
+        "mapping_status": "mapped"
+      },
+      "validation": {
+        "status": "verified",
+        "executed": true,
+        "baseline_status": "passed",
+        "candidate_status": "passed",
+        "checks": [
+          {
+            "name": "contract-examples-9c387b-27",
+            "status": "passed",
+            "role": "contract",
+            "scope": "retained",
+            "capabilities": [
+              "examples"
+            ],
+            "baseline_status": "passed",
+            "candidate_status": "passed",
+            "target_capabilities": [
+              "examples"
+            ],
+            "attribution": "knockout_confirmed",
+            "facts_given": 10,
+            "baseline_cases": {
+              "passed": 23,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 23
+            },
+            "candidate_cases": {
+              "passed": 23,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 23
+            }
+          }
+        ],
+        "coverage": "direct_checks",
+        "scope": "capability_only",
+        "independently_tested": false,
+        "obligations": [
+          {
+            "status": "verified",
+            "check": "contract-examples-9c387b-27",
+            "kind": "declared_check"
+          }
+        ],
+        "related_checks": [],
+        "context": {
+          "status": "verified",
+          "executed": true,
+          "baseline_status": "passed",
+          "candidate_status": "passed",
+          "checks": [
+            {
+              "name": "contract-examples-9c387b-27",
+              "status": "passed",
+              "role": "contract",
+              "scope": "retained",
+              "capabilities": [
+                "examples"
+              ],
+              "baseline_status": "passed",
+              "candidate_status": "passed",
+              "target_capabilities": [
+                "examples"
+              ],
+              "attribution": "knockout_confirmed",
+              "facts_given": 10,
+              "baseline_cases": {
+                "passed": 23,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 23
+              },
+              "candidate_cases": {
+                "passed": 23,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 23
+              }
+            }
+          ],
+          "coverage": "mapped_checks",
+          "scope": "capability_and_descendants",
+          "independently_tested": false,
+          "blockers": [],
+          "obligations": [
+            {
+              "status": "verified",
+              "check": "contract-examples-9c387b-27",
+              "kind": "declared_check"
+            }
+          ],
+          "evidence_href": "evidence.json"
+        },
+        "evidence_href": "evidence.json",
+        "evidence": {
+          "category": "direct_passed",
+          "direct": {
+            "total": 1,
+            "passed": 1,
+            "failed": 0,
+            "inconclusive": 0
+          },
+          "related": {
+            "total": 0,
+            "passed": 0,
+            "failed": 0,
+            "inconclusive": 0
+          },
+          "coverage": "declared_checks_only",
+          "count_unit": "check_records"
+        }
+      },
+      "tokens": {
+        "metric": "source_tokens",
+        "before": 4638,
+        "after": 6213,
+        "reduction_percent": -33.959,
+        "mapping_status": "mapped",
+        "scope": "Mapped source only; configuration tokens are measured globally, not allocated to modules.",
+        "before_files": [
+          {
+            "path": "文件 016",
+            "tokens": 1005
+          },
+          {
+            "path": "文件 017",
+            "tokens": 246
+          },
+          {
+            "path": "文件 018",
+            "tokens": 326
+          },
+          {
+            "path": "文件 021",
+            "tokens": 65
+          },
+          {
+            "path": "文件 023",
+            "tokens": 268
+          },
+          {
+            "path": "文件 024",
+            "tokens": 491
+          },
+          {
+            "path": "文件 026",
+            "tokens": 368
+          },
+          {
+            "path": "文件 027",
+            "tokens": 395
+          },
+          {
+            "path": "文件 028",
+            "tokens": 385
+          },
+          {
+            "path": "文件 029",
+            "tokens": 952
+          },
+          {
+            "path": "文件 030",
+            "tokens": 137
+          }
+        ],
+        "after_files": [
+          {
+            "path": "文件 017",
+            "tokens": 147
+          },
+          {
+            "path": "文件 018",
+            "tokens": 112
+          },
+          {
+            "path": "文件 019",
+            "tokens": 145
+          },
+          {
+            "path": "文件 020",
+            "tokens": 105
+          },
+          {
+            "path": "文件 021",
+            "tokens": 56
+          },
+          {
+            "path": "文件 022",
+            "tokens": 54
+          },
+          {
+            "path": "文件 024",
+            "tokens": 150
+          },
+          {
+            "path": "文件 025",
+            "tokens": 69
+          },
+          {
+            "path": "文件 083",
+            "tokens": 5375
+          }
+        ]
+      }
+    },
+    {
+      "id": "tooling",
+      "parent": null,
+      "name": "发布辅助生成器",
+      "kind": "capability",
+      "selection_reason": "selected",
+      "loc": {
+        "before": 234,
+        "after": 451,
+        "reduction_percent": -92.735,
+        "method": "mapped_file_union",
+        "shared": true,
+        "before_files": [
+          {
+            "path": "文件 010",
+            "lines": 60
+          },
+          {
+            "path": "文件 011",
+            "lines": 108
+          },
+          {
+            "path": "文件 012",
+            "lines": 66
+          }
+        ],
+        "after_files": [
+          {
+            "path": "文件 010",
+            "lines": 10
+          },
+          {
+            "path": "文件 011",
+            "lines": 11
+          },
+          {
+            "path": "文件 012",
+            "lines": 9
+          },
+          {
+            "path": "文件 053",
+            "lines": 126
+          },
+          {
+            "path": "文件 057",
+            "lines": 257
+          },
+          {
+            "path": "文件 067",
+            "lines": 19
+          },
+          {
+            "path": "文件 086",
+            "lines": 19
+          }
+        ],
+        "mapping_status": "mapped"
+      },
+      "validation": {
+        "status": "verified",
+        "executed": true,
+        "baseline_status": "passed",
+        "candidate_status": "passed",
+        "checks": [
+          {
+            "name": "contract-tooling-9c387b-25",
+            "status": "passed",
+            "role": "contract",
+            "scope": "retained",
+            "capabilities": [
+              "tooling"
+            ],
+            "baseline_status": "passed",
+            "candidate_status": "passed",
+            "target_capabilities": [
+              "tooling"
+            ],
+            "attribution": "knockout_confirmed",
+            "facts_given": 11,
+            "baseline_cases": {
+              "passed": 2,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 2
+            },
+            "candidate_cases": {
+              "passed": 2,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 2
+            }
+          },
+          {
+            "name": "contract-tooling-9c387b-26",
+            "status": "passed",
+            "role": "contract",
+            "scope": "retained",
+            "capabilities": [
+              "tooling"
+            ],
+            "baseline_status": "passed",
+            "candidate_status": "passed",
+            "target_capabilities": [
+              "tooling"
+            ],
+            "attribution": "knockout_confirmed",
+            "facts_given": 12,
+            "baseline_cases": {
+              "passed": 6,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 6
+            },
+            "candidate_cases": {
+              "passed": 6,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 6
+            }
+          }
+        ],
+        "coverage": "direct_checks",
+        "scope": "capability_only",
+        "independently_tested": false,
+        "obligations": [
+          {
+            "status": "verified",
+            "check": "contract-tooling-9c387b-25",
+            "kind": "declared_check"
+          },
+          {
+            "status": "verified",
+            "check": "contract-tooling-9c387b-26",
+            "kind": "declared_check"
+          }
+        ],
+        "related_checks": [],
+        "context": {
+          "status": "verified",
+          "executed": true,
+          "baseline_status": "passed",
+          "candidate_status": "passed",
+          "checks": [
+            {
+              "name": "contract-tooling-9c387b-25",
+              "status": "passed",
+              "role": "contract",
+              "scope": "retained",
+              "capabilities": [
+                "tooling"
+              ],
+              "baseline_status": "passed",
+              "candidate_status": "passed",
+              "target_capabilities": [
+                "tooling"
+              ],
+              "attribution": "knockout_confirmed",
+              "facts_given": 11,
+              "baseline_cases": {
+                "passed": 2,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 2
+              },
+              "candidate_cases": {
+                "passed": 2,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 2
+              }
+            },
+            {
+              "name": "contract-tooling-9c387b-26",
+              "status": "passed",
+              "role": "contract",
+              "scope": "retained",
+              "capabilities": [
+                "tooling"
+              ],
+              "baseline_status": "passed",
+              "candidate_status": "passed",
+              "target_capabilities": [
+                "tooling"
+              ],
+              "attribution": "knockout_confirmed",
+              "facts_given": 12,
+              "baseline_cases": {
+                "passed": 6,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 6
+              },
+              "candidate_cases": {
+                "passed": 6,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 6
+              }
+            }
+          ],
+          "coverage": "mapped_checks",
+          "scope": "capability_and_descendants",
+          "independently_tested": false,
+          "blockers": [],
+          "obligations": [
+            {
+              "status": "verified",
+              "check": "contract-tooling-9c387b-25",
+              "kind": "declared_check"
+            },
+            {
+              "status": "verified",
+              "check": "contract-tooling-9c387b-26",
+              "kind": "declared_check"
+            }
+          ],
+          "evidence_href": "evidence.json"
+        },
+        "evidence_href": "evidence.json",
+        "evidence": {
+          "category": "direct_passed",
+          "direct": {
+            "total": 2,
+            "passed": 2,
+            "failed": 0,
+            "inconclusive": 0
+          },
+          "related": {
+            "total": 0,
+            "passed": 0,
+            "failed": 0,
+            "inconclusive": 0
+          },
+          "coverage": "declared_checks_only",
+          "count_unit": "check_records"
+        }
+      },
+      "tokens": {
+        "metric": "source_tokens",
+        "before": 2197,
+        "after": 4978,
+        "reduction_percent": -126.582,
+        "mapping_status": "mapped",
+        "scope": "Mapped source only; configuration tokens are measured globally, not allocated to modules.",
+        "before_files": [
+          {
+            "path": "文件 010",
+            "tokens": 492
+          },
+          {
+            "path": "文件 011",
+            "tokens": 1111
+          },
+          {
+            "path": "文件 012",
+            "tokens": 594
+          }
+        ],
+        "after_files": [
+          {
+            "path": "文件 010",
+            "tokens": 79
+          },
+          {
+            "path": "文件 011",
+            "tokens": 95
+          },
+          {
+            "path": "文件 012",
+            "tokens": 61
+          },
+          {
+            "path": "文件 053",
+            "tokens": 1616
+          },
+          {
+            "path": "文件 057",
+            "tokens": 2567
+          },
+          {
+            "path": "文件 067",
+            "tokens": 280
+          },
+          {
+            "path": "文件 086",
+            "tokens": 280
+          }
+        ]
+      }
+    },
+    {
+      "id": "benchmarks",
+      "parent": null,
+      "name": "性能基准",
+      "kind": "capability",
+      "selection_reason": "selected",
+      "loc": {
+        "before": 89,
+        "after": 292,
+        "reduction_percent": -228.09,
+        "method": "mapped_file_union",
+        "shared": true,
+        "before_files": [
+          {
+            "path": "文件 014",
+            "lines": 0
+          },
+          {
+            "path": "文件 015",
+            "lines": 89
+          }
+        ],
+        "after_files": [
+          {
+            "path": "文件 014",
+            "lines": 0
+          },
+          {
+            "path": "文件 015",
+            "lines": 292
+          }
+        ],
+        "mapping_status": "mapped"
+      },
+      "validation": {
+        "status": "unknown",
+        "executed": false,
+        "baseline_status": "not_run",
+        "candidate_status": "not_run",
+        "checks": [],
+        "coverage": "direct_checks",
+        "scope": "capability_only",
+        "independently_tested": false,
+        "obligations": [
+          {
+            "kind": "coverage",
+            "status": "unknown",
+            "reason": "no_direct_checks"
+          }
+        ],
+        "related_checks": [
+          {
+            "name": "original_perf",
+            "status": "passed",
+            "role": "original",
+            "scope": "retained",
+            "capabilities": [
+              "core",
+              "benchmarks"
+            ],
+            "baseline_status": "passed",
+            "candidate_status": "passed",
+            "target_capabilities": [],
+            "attribution": "unattributed",
+            "facts_given": 13,
+            "baseline_cases": {
+              "passed": 7,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 7
+            },
+            "candidate_cases": {
+              "passed": 7,
+              "failed": 0,
+              "errors": 0,
+              "skipped": 0,
+              "executed": 7
+            }
+          }
+        ],
+        "context": {
+          "status": "verified",
+          "executed": true,
+          "baseline_status": "passed",
+          "candidate_status": "passed",
+          "checks": [
+            {
+              "name": "original_perf",
+              "status": "passed",
+              "role": "original",
+              "scope": "retained",
+              "capabilities": [
+                "core",
+                "benchmarks"
+              ],
+              "baseline_status": "passed",
+              "candidate_status": "passed",
+              "target_capabilities": [],
+              "attribution": "unattributed",
+              "facts_given": 13,
+              "baseline_cases": {
+                "passed": 7,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 7
+              },
+              "candidate_cases": {
+                "passed": 7,
+                "failed": 0,
+                "errors": 0,
+                "skipped": 0,
+                "executed": 7
+              }
+            }
+          ],
+          "coverage": "mapped_checks",
+          "scope": "capability_and_descendants",
+          "independently_tested": false,
+          "blockers": [],
+          "obligations": [
+            {
+              "status": "verified",
+              "check": "original_perf",
+              "kind": "declared_check"
+            }
+          ],
+          "evidence_href": "evidence.json"
+        },
+        "evidence_href": "evidence.json",
+        "blockers": [
+          "No valid leaf test: no behavioral knockout failure"
+        ],
+        "evidence": {
+          "category": "related_passed",
+          "direct": {
+            "total": 0,
+            "passed": 0,
+            "failed": 0,
+            "inconclusive": 0
+          },
+          "related": {
+            "total": 1,
+            "passed": 1,
+            "failed": 0,
+            "inconclusive": 0
+          },
+          "coverage": "limited",
+          "count_unit": "check_records"
+        }
+      },
+      "tokens": {
+        "metric": "source_tokens",
+        "before": 532,
+        "after": 2101,
+        "reduction_percent": -294.925,
+        "mapping_status": "mapped",
+        "scope": "Mapped source only; configuration tokens are measured globally, not allocated to modules.",
+        "before_files": [
+          {
+            "path": "文件 014",
+            "tokens": 0
+          },
+          {
+            "path": "文件 015",
+            "tokens": 532
+          }
+        ],
+        "after_files": [
+          {
+            "path": "文件 014",
+            "tokens": 0
+          },
+          {
+            "path": "文件 015",
+            "tokens": 2101
+          }
+        ]
+      }
+    }
+  ],
+  "scope": {
+    "preset": "all",
+    "foundations": [
+      "core",
+      "monitor",
+      "utils"
+    ],
+    "core": [
+      "core",
+      "monitor",
+      "utils"
+    ],
+    "kept": [
+      "async",
+      "auto",
+      "bells",
+      "benchmarks",
+      "cli",
+      "compat",
+      "concurrent",
+      "core",
+      "dask",
+      "examples",
+      "gui",
+      "iterables",
+      "keras",
+      "logging",
+      "monitor",
+      "notebook",
+      "notifications",
+      "pandas",
+      "rich",
+      "tk",
+      "tooling",
+      "utils"
+    ],
+    "removed": [],
+    "reasons": {
+      "core": "foundation",
+      "utils": "foundation",
+      "monitor": "foundation",
+      "cli": "selected_dependency",
+      "compat": "selected",
+      "pandas": "selected_dependency",
+      "async": "selected_dependency",
+      "notebook": "selected_dependency",
+      "auto": "selected_dependency",
+      "gui": "selected_dependency",
+      "tk": "selected",
+      "rich": "selected",
+      "iterables": "selected",
+      "concurrent": "selected_dependency",
+      "logging": "selected",
+      "notifications": "selected_dependency",
+      "bells": "selected",
+      "dask": "selected",
+      "keras": "selected",
+      "examples": "selected",
+      "tooling": "selected",
+      "benchmarks": "selected"
+    }
+  },
+  "methodology": [
+    "Scope and rewrite attribution are mapped-file estimates, not exact semantic savings. Shared files count once and retained/removed code within them cannot be separated.",
+    "All original configuration is charged to the retained footprint. Configuration changes appear in the rewrite estimate and may include scope-related savings.",
+    "Overall reduction uses the full original as denominator; rewrite reduction uses the selected original estimate. Their percentages must not be added.",
+    "Negative reductions indicate growth; incomplete measurements do not establish savings.",
+    "The primary size metric counts frozen-tokenizer tokens in source and configuration, summed independently per file. These are code-size tokens, not model usage or task effort.",
+    "Module token figures cover mapped source only; global configuration cost is not assigned to modules. Informational LOC remains separate.",
+    "Incomplete token measurements show observed subtotals, never a verified reduction or successful budget.",
+    "Informational LOC counts are physical source lines from the frozen original and bound candidate inventories, excluding tests and local state.",
+    "Original capability counts include all original descendants; candidate counts include explicitly mapped own files and retained descendants. Excluded descendants do not require candidate mapping. Shared files count once within a node; node counts cannot be added together.",
+    "Candidate ownership is explicitly supplied metadata, not proof of semantic ownership. Missing mappings remain unknown, never zero or a claimed reduction.",
+    "Function steps inherit their owning capability's code scope, but validation remains unknown without direct step evidence; they are not independently measured or tested.",
+    "Local validation statuses use directly targeted checks only. Evidence badges separately describe direct checks and related context. Parent, descendant, import-related and shared evidence never implies a local pass or failure.",
+    "A check targets the leaves whose knockout broke its behavior; a leaf it survived, or whose knockout only broke importing, is context. Otherwise checks naming one capability target that capability by default. Broad or unscoped checks need explicit report check_targets; unattributed results remain in the verification summary and evidence.",
+    "Where the author was given facts a check pins (its asserted behavior and reference values), that check's pass is not independent evidence; such checks are marked.",
+    "Evidence labels distinguish directly passed check records, mixed direct evidence, related passing evidence and missing evidence. Related passes do not verify this module; check-record counts are not a functional coverage percentage.",
+    "Verification describes declared check groups and their observed configurations, not individual unit-test counts or full semantic equivalence.",
+    "Failed original baselines, unrun checks, retired scope and incomplete coverage remain distinct. Installation is reported separately.",
+    "Only public labels, relative file mappings, hashes and summary observations are included. Source contents, command argv, environment values and captured output are omitted."
+  ],
+  "installation": {
+    "status": "passed",
+    "checks_passed": 2,
+    "checks_total": 2,
+    "environment_metadata_complete": true
+  },
+  "rewrite_progress": {
+    "priority": "functionality_first",
+    "author_attempts": 11,
+    "repair_attempts": 9,
+    "optimization_attempts": 0,
+    "restorations": 0,
+    "rejected_attempts": 0,
+    "failed_optimizations": 0,
+    "max_optimization_attempts": 3,
+    "stop_reason": null,
+    "accepted_candidate_available": true,
+    "behavior_acceptance": "passed",
+    "size_acceptance": "met"
+  },
+  "task_effort": {
+    "schema_version": 1,
+    "operation": "task_effort_evaluation",
+    "status": "disabled",
+    "binding": {},
+    "policy": {
+      "comparison": "empirical_range",
+      "strict_all_tasks": true
+    },
+    "task_types": [
+      "understand",
+      "diagnose",
+      "modify",
+      "execute"
+    ],
+    "tasks": [],
+    "overhead": {
+      "examiner_tokens": null,
+      "judge_tokens": null,
+      "solver_tokens": null,
+      "total_tokens": null,
+      "usage_complete": false,
+      "observed_total_tokens": null,
+      "role_usage_complete": {
+        "examiner": false,
+        "solver": false,
+        "judge": false
+      }
+    },
+    "resources": {
+      "completed_runs": 0,
+      "cleanup_pending": false,
+      "cleanup_pending_runs": 0
+    },
+    "iterations": [],
+    "limitations": [
+      "Task effort measures these tasks under the recorded agent settings; it is not a universal measure of human cognitive burden.",
+      "Tokens count solver model inputs and outputs, including cached input. Missing usage is unavailable, never zero. Examiner and judge overhead is separate.",
+      "Empirical ranges describe repeated observations, not statistical confidence intervals. Failed or unrun tasks do not establish an improvement.",
+      "Task links identify assessed capabilities only; they do not change module behavior verification badges.",
+      "Task prompts, hidden inputs, judging rubrics, source excerpts, raw traces and local paths are omitted from this public report."
+    ],
+    "stop_reason": "owner_disabled"
+  },
+  "report_id": "nrs_5afdf736aaead8b1877c67ea5f472afef536978177034229af4953b365927e32"
+}
